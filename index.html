@@ -196,6 +196,7 @@ body.light #skillCritDamage,body.light #burstDpm{color:#8a5f00 !important}
 body.light #hasteRate{color:#6d48d6}
 body.light .popup-box{background:#faf8ff;border-color:#c4b5fd;color:#1e1b4b}
 body.light #luckFields label span{background:rgba(124,58,237,.1) !important;color:#5b21b6 !important}
+body.light #survivalFields > div:last-child{color:#9080c0}
 body.light .qname{color:#1e1b4b}
 /* ── 헤더 + 퀵메뉴 버튼 다크모드 고유색 ── */
 #btnSaveModal,#btnFloatSave{color:#72e45d;border-color:#2a5e2a}
@@ -560,10 +561,13 @@ body.light .ocr-row-missing input{background:rgba(180,40,40,.05) !important;bord
       <div class="field block"><label>사용할 스텟 포인트</label><input id="optPoints" type="number" value="0"></div>
       <div class="field block"><label>사용할 단전 포인트</label><input id="optDan" type="number" value="0"></div>
     </div>
-    <div id="survivalFields" style="display:none;margin-top:12px" class="grid grid4">
-      <div class="field block"><label>목표 체력</label><input id="targetHp" type="number" value="0"></div>
-      <div class="field block"><label>목표 물약 회복량</label><input id="targetPotion" type="number" value="0"></div>
-      <div class="field block"><label>목표 저항</label><input id="targetResist" type="number" value="0"></div>
+    <div id="survivalFields" style="display:none;margin-top:12px">
+      <div class="grid grid4">
+        <div class="field block"><label>목표 체력</label><input id="targetHp" type="number" value="0"></div>
+        <div class="field block"><label>목표 물약 회복량</label><input id="targetPotion" type="number" value="0"></div>
+        <div class="field block"><label>목표 저항</label><input id="targetResist" type="number" value="0"></div>
+      </div>
+      <div style="margin-top:8px;font-size:11px;color:#6b7fa3">※ 0으로 입력한 항목은 무시하고 계산됩니다.</div>
     </div>
     <div id="luckFields" style="display:none;margin-top:12px">
       <div class="field block">
