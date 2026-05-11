@@ -9,11 +9,209 @@
   <link rel="icon" href="images/yasu.png" sizes="192x192">
   <link rel="apple-touch-icon" href="images/yasu.png">
   <style>
-:root{--bg:#050914;--line:#263653;--text:#eaf1ff;--muted:#8ea0c2;--blue:#55a7ff;--gold:#ffd85a;--red:#ff5f7d;--green:#72e45d;--purple:#b879ff;--cyan:#20d7ff;--orange:#ff8a33;--teal:#38e2c2}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#12203a,#050914 58%);color:var(--text);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1740px;margin:0 auto;padding:22px;display:grid;grid-template-columns:.95fr 1.25fr;gap:14px}.top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding:10px 6px 18px}.brand{display:flex;gap:14px;align-items:center}.logo{font-size:42px;filter:drop-shadow(0 0 12px #6d8fff)}h1{margin:0;font-size:34px;line-height:1}.sub{font-size:13px;letter-spacing:2px;color:#9caeff;font-weight:800}.creator-corner{position:fixed;top:18px;right:20px;display:flex;align-items:center;gap:10px;opacity:.9;z-index:50}.creator-corner img{width:56px;height:56px;border-radius:10px;border:1px solid #2b3a55;box-shadow:0 0 14px rgba(0,0,0,.45)}.creator-text{font-size:13px;color:#9fb3d9;line-height:1.25}.creator-text b{color:#fff;font-size:14px}.creator-text span{font-size:11px;color:#7f93c7}.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}button{border:1px solid #2a3d5d;background:linear-gradient(180deg,#111b2d,#090f1d);color:#cfe0ff;border-radius:12px;padding:11px 14px;font-weight:900;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}button:hover{border-color:#5c7ec0}.danger{color:#ff8397;border-color:#643040}.primary{color:#ffd85a;border-color:#6b5522}.survival-btn{color:#61b9ff;border-color:#244d76}.luck-btn{color:#72e45d;border-color:#2f6f3d}.card,.section{background:linear-gradient(180deg,rgba(15,24,42,.94),rgba(8,14,26,.96));border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 18px 70px rgba(0,0,0,.28)}.left,.right{display:grid;gap:12px}.section{background:rgba(6,12,24,.52)}.s1{border-color:#744fcf}.s2{border-color:#315d9a}.s3{border-color:#7349c8}.s4{border-color:#168c7f}.s5{border-color:#8f7428}.title{display:flex;align-items:center;gap:10px;margin-bottom:14px}.badge{font-weight:900;color:#fff;border-radius:7px;padding:4px 7px;background:linear-gradient(135deg,#3559c9,#8e59ff)}h2{font-size:20px;margin:0;color:#dfe8ff}h3{margin:0 0 12px;color:#dfe8ff}.s4 h2{color:var(--teal)}.s5 h2{color:var(--gold)}.hint{font-size:11px;color:#7f93c7;opacity:.75;margin:4px 0 10px 2px}.grid{display:grid;gap:11px}.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}.field.block{display:block}label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}input{width:100%;height:40px;background:#070d1a;border:1px solid #2a3b5c;border-radius:7px;color:var(--text);padding:8px 11px;font-size:16px;text-align:center}input:focus{outline:none;border-color:#795dff;box-shadow:0 0 0 2px rgba(121,93,255,.15)}input[readonly]{opacity:.72;pointer-events:none}.quick{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}.quick:last-child{border-bottom:0}.qname{font-weight:900;font-size:18px}.qdesc{font-size:12px;color:var(--muted);margin-top:2px}.qbuttons{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.qbuttons button{padding:9px 0}.minus{color:#61b9ff;border-color:#244d76}.plus{color:#ffd85a;border-color:#6c5423}.result-card{position:relative;overflow:hidden}.result-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.result-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:14px;align-items:start}.circle{height:290px;display:grid;place-items:center;position:relative}.circle:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;border:3px solid rgba(160,92,255,.8);box-shadow:0 0 40px rgba(160,92,255,.35),inset 0 0 60px rgba(160,92,255,.12)}.circle:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;border:1px solid rgba(160,92,255,.5)}.main-num{text-align:center;z-index:1}.main-num .name{color:#cdb9ff;font-weight:800}.main-num .val{font-size:38px;font-weight:1000;color:#d8c6ff;margin-top:10px;text-shadow:0 0 20px rgba(185,132,255,.65)}.main-num .gain{font-size:16px;color:#b783ff;margin-top:8px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 10px;min-width:0}.result{background:linear-gradient(180deg,#0d1627,#08101d);border:1px solid #263653;border-radius:12px;padding:15px;min-height:92px}.cards .result{display:grid;grid-template-columns:minmax(92px,1fr) auto minmax(46px,64px);align-items:center;gap:8px;min-width:0;min-height:54px;padding:10px 16px;border-radius:10px;background:linear-gradient(180deg,rgba(13,24,39,.95),rgba(7,17,29,.95));box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)}.result .name{font-size:13px;color:var(--muted)}.cards .result .name{font-size:13px;color:#d9e4ff;font-weight:800;margin:0;white-space:nowrap}.result .value{font-size:25px;font-weight:1000;margin-top:10px}.cards .result .value{font-size:18px;margin:0;text-align:right;white-space:nowrap}.result .gain{font-size:12px;color:#9bb0d5;margin-top:4px}.cards .result .gain{font-size:11px;margin:0;text-align:right;color:#44e0a0;white-space:nowrap}.cards .result .gain::before{content:'▲ ';font-size:10px}.red{color:var(--red)}.blue{color:var(--blue)}.green{color:var(--green)}.gold{color:var(--gold)}.purple{color:var(--purple)}.cyan{color:var(--cyan)}.orange{color:var(--orange)}.combat{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.combat .result{min-height:92px}.status-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.status{background:linear-gradient(180deg,#0d1627,#08101d);border:1px solid #263653;border-radius:12px;padding:14px;min-height:138px;display:grid;align-content:end;position:relative;overflow:hidden}.status .st-name{position:absolute;top:14px;left:14px;font-weight:900}.status .st-val{font-size:28px;font-weight:1000;text-align:center;margin-bottom:18px}.bar{height:12px;border-radius:5px;background:#16243a;overflow:hidden;box-shadow:inset 0 0 8px rgba(0,0,0,.5)}.fill{height:100%;width:0%;border-radius:5px;box-shadow:0 0 14px currentColor}.fill.red{background:#ff334f}.fill.green{background:#72e45d}.fill.gold{background:#ffd02e}.fill.purple{background:#a94cff}.fill.blue{background:#349cff}.skill-panel{display:grid;grid-template-columns:1fr 220px;gap:18px;align-items:center;border-color:#6e48b6;background:radial-gradient(circle at 90% 40%,rgba(170,80,255,.18),rgba(8,14,26,.96) 45%)}.skill-table{border:1px solid #263653;border-radius:10px;overflow:hidden}.skill-row{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.08);color:var(--muted)}.skill-row:last-child{border-bottom:0}.skill-row b{color:var(--text)}.skill-row.big{font-size:18px;color:#d07cff}.toggle-field{display:flex;align-items:center;justify-content:space-between;height:40px;background:#070d1a;border:1px solid #2a3b5c;border-radius:7px;padding:0 10px}.toggle-field span{font-size:13px;color:var(--muted)}.switch{position:relative;width:44px;height:24px;display:inline-block}.switch input{display:none}.slider{position:absolute;cursor:pointer;inset:0;background:#263653;border-radius:999px;transition:.2s}.slider:before{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;background:#8ea0c2;border-radius:50%;transition:.2s}.switch input:checked+.slider{background:#6b4cff;box-shadow:0 0 12px rgba(107,76,255,.45)}.switch input:checked+.slider:before{transform:translateX(20px);background:#fff}.skill-orb{height:190px;display:grid;place-items:center;position:relative}.skill-orb:before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;border:18px solid #23304b;border-top-color:#bc4cff;transform:rotate(40deg);box-shadow:0 0 28px rgba(188,76,255,.35)}.skill-orb span{font-size:56px;filter:drop-shadow(0 0 16px #bc4cff);z-index:1}.skill-orb small{position:absolute;bottom:0;color:#d5c0ff;font-size:20px;font-weight:900}.line{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--muted)}.line:last-child{border-bottom:0}.line b{color:var(--text);text-align:right}.fixed{font-size:13px;line-height:1.65;color:var(--muted);background:#0d1627;border:1px solid #263653;border-radius:10px;padding:12px}.fixed b{color:#fff}.popup-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:9999;display:none;align-items:center;justify-content:center;padding:24px}.popup-backdrop.show{display:flex}.popup-box{position:relative;max-width:960px;width:min(92vw,960px);background:#070b14;border:1px solid #5a1d1d;border-radius:14px;box-shadow:0 30px 100px rgba(0,0,0,.65),0 0 40px rgba(120,20,20,.35);overflow:hidden}.popup-box img{display:block;width:100%;height:auto}.popup-close{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.65);color:#fff;font-size:22px;line-height:1;padding:0}.popup-actions{display:flex;justify-content:space-between;gap:10px;padding:12px;background:linear-gradient(180deg,#120908,#070b14)}.popup-actions button{flex:1}.popup-hide{color:#ffd1d1;border-color:#6e2424;background:linear-gradient(180deg,#351010,#180808)}@media(max-width:1200px){.wrap{grid-template-columns:1fr}.result-layout{grid-template-columns:1fr}.circle{height:220px}.circle:before{width:190px;height:190px}.circle:after{width:150px;height:150px}.grid4,.cards,.combat,.status-grid{grid-template-columns:repeat(2,1fr)}.skill-panel{grid-template-columns:1fr}.qbuttons{grid-template-columns:repeat(3,1fr)}}@media(max-width:720px){.grid4,.cards,.combat,.status-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.creator-corner{position:absolute;top:14px;right:14px}}
+:root{--bg:#050914;--line:#263653;--text:#eaf1ff;--muted:#8ea0c2;--blue:#55a7ff;--gold:#ffd85a;--red:#ff5f7d;--green:#72e45d;--purple:#b879ff;--cyan:#20d7ff;--orange:#ff8a33;--teal:#38e2c2}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 50% -10%,#12203a,#050914 58%);color:var(--text);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:1740px;margin:0 auto;padding:22px;display:grid;grid-template-columns:.95fr 1.25fr;gap:14px}
+.top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding:10px 6px 18px}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{font-size:42px;filter:drop-shadow(0 0 12px #6d8fff)}
+h1{margin:0;font-size:34px;line-height:1}
+.sub{font-size:13px;letter-spacing:2px;color:#9caeff;font-weight:800}
+.creator-corner{position:fixed;top:18px;right:20px;display:flex;align-items:center;gap:10px;opacity:.9;z-index:50}
+.creator-corner img{width:56px;height:56px;border-radius:10px;border:1px solid #2b3a55;box-shadow:0 0 14px rgba(0,0,0,.45)}
+.creator-text{font-size:13px;color:#9fb3d9;line-height:1.25}
+.creator-text b{color:#fff;font-size:14px}
+.creator-text span{font-size:11px;color:#7f93c7}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.floating-actions{position:fixed;right:48px;top:120px;z-index:80;width:190px;padding:12px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(15,24,42,.94),rgba(8,14,26,.96));box-shadow:0 18px 60px rgba(0,0,0,.35);display:grid;gap:8px}
+.floating-actions .float-title{font-size:12px;color:var(--muted);font-weight:900;letter-spacing:.8px;text-align:center;margin-bottom:2px}
+.floating-actions button{width:100%;padding:10px 12px}
+.actions .quick-action{display:none}
+button{border:1px solid #2a3d5d;background:linear-gradient(180deg,#111b2d,#090f1d);color:#cfe0ff;border-radius:12px;padding:11px 14px;font-weight:900;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+button:hover{border-color:#5c7ec0}
+.danger{color:#ff8397;border-color:#643040}
+.reset-btn{color:#ffb0b0;border-color:#7a3f4b;background:linear-gradient(180deg,#2a151b,#13090c)}
+.primary{color:#ffd85a;border-color:#6b5522}
+.survival-btn{color:#61b9ff;border-color:#244d76}
+.luck-btn{color:#72e45d;border-color:#2f6f3d}
+.card,.section{background:linear-gradient(180deg,rgba(15,24,42,.94),rgba(8,14,26,.96));border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 18px 70px rgba(0,0,0,.28)}
+.left,.right{display:grid;gap:12px}
+.section{background:rgba(6,12,24,.52)}
+.s1{border-color:#744fcf}.s2{border-color:#315d9a}.s3{border-color:#7349c8}.s4{border-color:#168c7f}.s5{border-color:#8f7428}
+.title{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.badge{font-weight:900;color:#fff;border-radius:7px;padding:4px 7px;background:linear-gradient(135deg,#3559c9,#8e59ff)}
+h2{font-size:20px;margin:0;color:#dfe8ff}
+h3{margin:0 0 12px;color:#dfe8ff}
+.s4 h2{color:var(--teal)}
+.s5 h2{color:var(--gold)}
+.hint{font-size:11px;color:#7f93c7;opacity:.75;margin:4px 0 10px 2px}
+.grid{display:grid;gap:11px}
+.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.field.block{display:block}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+input{width:100%;height:40px;background:#070d1a;border:1px solid #2a3b5c;border-radius:7px;color:var(--text);padding:8px 11px;font-size:16px;text-align:center}
+input:focus{outline:none;border-color:#795dff;box-shadow:0 0 0 2px rgba(121,93,255,.15)}
+input[readonly]{opacity:.72;pointer-events:none}
+.quick{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.quick:last-child{border-bottom:0}
+.qname{font-weight:900;font-size:18px}
+.qdesc{font-size:12px;color:var(--muted);margin-top:2px}
+.qbuttons{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.qbuttons button{padding:9px 0}
+.minus{color:#61b9ff;border-color:#244d76}
+.plus{color:#ffd85a;border-color:#6c5423}
+.result-card{position:relative;overflow:hidden}
+.result-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.result-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:14px;align-items:start}
+.circle{height:290px;display:grid;place-items:center;position:relative}
+.circle svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.arc-bg{fill:none;stroke:#16243a;stroke-width:12;stroke-linecap:round}
+.arc-fill{fill:none;stroke:url(#arcGrad);stroke-width:12;stroke-linecap:round;stroke-dasharray:0 1000;transition:stroke-dasharray .6s cubic-bezier(.4,0,.2,1)}
+.main-num{text-align:center;z-index:1;position:relative}
+.main-num .name{color:#cdb9ff;font-weight:800;font-size:12px;letter-spacing:.5px}
+.main-num .val{font-size:36px;font-weight:1000;color:#d8c6ff;margin-top:6px;text-shadow:0 0 20px rgba(185,132,255,.65)}
+.main-num .gain{font-size:14px;color:#b783ff;margin-top:6px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 10px;min-width:0}
+.result{background:linear-gradient(180deg,#0d1627,#08101d);border:1px solid #263653;border-radius:12px;padding:15px;min-height:92px}
+.cards .result{display:grid;grid-template-columns:minmax(92px,1fr) auto minmax(46px,64px);align-items:center;gap:8px;min-width:0;min-height:54px;padding:10px 16px;border-radius:10px;background:linear-gradient(180deg,rgba(13,24,39,.95),rgba(7,17,29,.95));box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)}
+.result .name{font-size:13px;color:var(--muted)}
+.cards .result .name{font-size:13px;color:#d9e4ff;font-weight:800;margin:0;white-space:nowrap}
+.result .value{font-size:25px;font-weight:1000;margin-top:10px}
+.cards .result .value{font-size:18px;margin:0;text-align:right;white-space:nowrap}
+.result .gain{font-size:12px;color:#9bb0d5;margin-top:4px}
+.cards .result .gain{font-size:11px;margin:0;text-align:right;color:#44e0a0;white-space:nowrap}
+.cards .result .gain::before{content:'▲ ';font-size:10px}
+.red{color:var(--red)}.blue{color:var(--blue)}.green{color:var(--green)}.gold{color:var(--gold)}.purple{color:var(--purple)}.cyan{color:var(--cyan)}.orange{color:var(--orange)}
+.combat{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.combat .result{min-height:92px}
+.status-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.status{background:linear-gradient(180deg,#0d1627,#08101d);border:1px solid #263653;border-radius:12px;padding:14px;min-height:138px;display:grid;align-content:end;position:relative;overflow:hidden}
+.status .st-name{position:absolute;top:14px;left:14px;font-weight:900}
+.status .st-val{font-size:28px;font-weight:1000;text-align:center;margin-bottom:18px}
+.bar{height:12px;border-radius:5px;background:#16243a;overflow:hidden;box-shadow:inset 0 0 8px rgba(0,0,0,.5)}
+.fill{height:100%;width:0%;border-radius:5px;box-shadow:0 0 14px currentColor;transition:width .5s cubic-bezier(.4,0,.2,1)}
+.fill.red{background:#ff334f}.fill.green{background:#72e45d}.fill.gold{background:#ffd02e}.fill.purple{background:#a94cff}.fill.blue{background:#349cff}
+.cards .result{transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+.cards .result:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(120,80,255,.22),inset 0 0 0 1px rgba(160,100,255,.3);border-color:#5a3da8}
+.combat .result{transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+.combat .result:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(120,80,255,.22);border-color:#5a3da8}
+.skill-panel{display:grid;grid-template-columns:1fr 220px;gap:18px;align-items:center;border-color:#6e48b6;background:radial-gradient(circle at 90% 40%,rgba(170,80,255,.18),rgba(8,14,26,.96) 45%)}
+.skill-table{border:1px solid #263653;border-radius:10px;overflow:hidden}
+.skill-row{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.08);color:var(--muted)}
+.skill-row:last-child{border-bottom:0}
+.skill-row b{color:var(--text)}
+.skill-row.big{font-size:18px;color:#d07cff}
+.toggle-field{display:flex;align-items:center;justify-content:space-between;height:40px;background:#070d1a;border:1px solid #2a3b5c;border-radius:7px;padding:0 10px}
+.toggle-field span{font-size:13px;color:var(--muted)}
+.switch{position:relative;width:44px;height:24px;display:inline-block}
+.switch input{display:none}
+.slider{position:absolute;cursor:pointer;inset:0;background:#263653;border-radius:999px;transition:.2s}
+.slider:before{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;background:#8ea0c2;border-radius:50%;transition:.2s}
+.switch input:checked+.slider{background:#6b4cff;box-shadow:0 0 12px rgba(107,76,255,.45)}
+.switch input:checked+.slider:before{transform:translateX(20px);background:#fff}
+.skill-orb{height:190px;display:grid;place-items:center;position:relative}
+.skill-orb:before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;border:14px solid #1a2640;border-top-color:#a855f7;border-right-color:#7c3aed;transform:rotate(30deg);box-shadow:0 0 32px rgba(168,85,247,.4),inset 0 0 20px rgba(124,58,237,.1);transition:box-shadow .4s ease}
+.skill-orb:after{content:"";position:absolute;width:118px;height:118px;border-radius:50%;border:1px solid rgba(168,85,247,.2);box-shadow:inset 0 0 30px rgba(124,58,237,.12)}
+.skill-orb .orb-inner{position:relative;z-index:1;text-align:center}
+.skill-orb .orb-val{font-size:28px;font-weight:1000;color:#e9d5ff;text-shadow:0 0 28px rgba(167,139,250,.8);line-height:1;word-break:break-all;max-width:120px;text-align:center;display:block;transition:text-shadow .3s ease}
+.skill-orb:hover:before{box-shadow:0 0 48px rgba(168,85,247,.65),inset 0 0 28px rgba(124,58,237,.18)}
+.skill-orb:hover .orb-val{text-shadow:0 0 40px rgba(167,139,250,1)}
+.line{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--muted)}
+.line:last-child{border-bottom:0}
+.line b{color:var(--text);text-align:right}
+.fixed{font-size:13px;line-height:1.65;color:var(--muted);background:#0d1627;border:1px solid #263653;border-radius:10px;padding:12px}
+.fixed b{color:#fff}
+.popup-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:9999;display:none;align-items:center;justify-content:center;padding:24px}
+.popup-backdrop.show{display:flex}
+.popup-box{position:relative;max-width:960px;width:min(92vw,960px);background:#070b14;border:1px solid #5a1d1d;border-radius:14px;box-shadow:0 30px 100px rgba(0,0,0,.65),0 0 40px rgba(120,20,20,.35);overflow:hidden}
+.popup-box img{display:block;width:100%;height:auto}
+.popup-close{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.65);color:#fff;font-size:22px;line-height:1;padding:0}
+.popup-actions{display:flex;justify-content:space-between;gap:10px;padding:12px;background:linear-gradient(180deg,#120908,#070b14)}
+.popup-actions button{flex:1}
+.popup-hide{color:#ffd1d1;border-color:#6e2424;background:linear-gradient(180deg,#351010,#180808)}
+
+/* ── 라이트모드 ── */
+body.light{background:linear-gradient(180deg,#d7e1f0,#c8d4e7);color:#111827}
+body.light .card,body.light .section{background:linear-gradient(180deg,rgba(248,250,255,.98),rgba(232,239,250,.99));border-color:#98aacb;box-shadow:0 12px 36px rgba(63,86,130,.14)}
+body.light .section{background:rgba(243,247,253,.86)}
+body.light input{background:#f8fbff;border-color:#8fa2c4;color:#111827;font-weight:700}
+body.light input:focus{border-color:#5b73ff;box-shadow:0 0 0 2px rgba(91,115,255,.16)}
+body.light label,body.light .hint,body.light .sub,body.light .result .name,body.light .line,body.light .fixed,body.light .skill-row,body.light .qdesc{color:#394963}
+body.light .creator-text{color:#34445f}
+body.light h1,body.light h2,body.light h3,body.light .line b,body.light .fixed b{color:#101827}
+body.light .creator-text b{color:#162747}
+body.light .creator-text span{color:#465a7a}
+body.light button{background:linear-gradient(180deg,#f5f8fe,#dde6f5);border-color:#a5b5d4;color:#23365e}
+body.light button:hover{border-color:#6d86c8}
+body.light .primary{color:#7a5a00;border-color:#d7b750;background:linear-gradient(180deg,#fff8d8,#f3e5a9)}
+body.light .survival-btn{color:#1d66ad;border-color:#84b7ef;background:linear-gradient(180deg,#eaf5ff,#d8ebff)}
+body.light .luck-btn{color:#23733b;border-color:#8ed39e;background:linear-gradient(180deg,#ecfff0,#d9f8df)}
+body.light .reset-btn{color:#a44b55;border-color:#e6a1aa;background:linear-gradient(180deg,#fff0f2,#f8d9dd)}
+body.light .danger{color:#b82036;border-color:#dc8190;background:linear-gradient(180deg,#ffe8ec,#f6c8d0)}
+body.light .result,body.light .status,body.light .fixed{background:linear-gradient(180deg,#fbfdff,#eaf1fb);border-color:#a8b7d2}
+body.light .cards .result{background:linear-gradient(180deg,#fbfdff,#eaf1fb);box-shadow:inset 0 0 0 1px rgba(0,0,0,.035)}
+body.light .arc-bg{stroke:#c9d6ea}
+body.light .main-num .name{color:#5b54aa}
+body.light .main-num .val{color:#554cc4;text-shadow:0 0 14px rgba(85,76,196,.22)}
+body.light .main-num .gain{color:#6e60d6}
+body.light .cards .result:hover{box-shadow:0 6px 24px rgba(80,70,200,.15),inset 0 0 0 1px rgba(100,80,220,.25);border-color:#8b9fd4}
+body.light .bar{background:#c9d6ea}
+body.light .skill-table{border-color:#9fb0cf;background:#f8fbff}
+body.light .skill-panel{background:radial-gradient(circle at 90% 40%,rgba(122,95,255,.10),rgba(244,247,253,.96) 45%);border-color:#b9a9ef}
+body.light .skill-orb:before{border-color:#c8d5ea;border-top-color:#8a7dff;box-shadow:0 0 18px rgba(138,125,255,.18)}
+body.light .skill-orb:before{border-color:#d0d8ef;border-top-color:#7c6ee8;border-right-color:#9b8bf0;box-shadow:0 0 20px rgba(124,110,232,.2)}
+body.light .skill-orb:after{border-color:rgba(124,110,232,.15)}
+body.light .skill-orb .orb-val{color:#3d35a8;text-shadow:none}
+body.light .toggle-field{background:#f8fbff;border-color:#95a8c8}
+body.light .toggle-field span{color:#52617e}
+body.light .slider{background:#c4d0e6}
+body.light .switch input:checked+.slider{background:#8b7cff;box-shadow:0 0 10px rgba(139,124,255,.24)}
+body.light .switch input:checked+.slider:before{background:#ffffff}
+body.light .skill-row b{color:#1a2a45}
+body.light #skillHasteLine,body.light #skillBossLine,body.light #skillUseLine{color:#1a2a45 !important}
+body.light #realCdLine,body.light #skillNonCritDamage{color:#4b74c9 !important}
+body.light #skillCritDamage,body.light #burstDpm{color:#8a5f00 !important}
+body.light #hasteRate{color:#6b5fd1}
+body.light .popup-box{background:#f8fbff;border-color:#9badcc;color:#111827}
+body.light .floating-actions{background:linear-gradient(180deg,rgba(248,250,255,.96),rgba(232,239,250,.98));border-color:#98aacb;box-shadow:0 12px 36px rgba(63,86,130,.16)}
+body.light .floating-actions .float-title{color:#394963}
+body.light .popup-actions{background:linear-gradient(180deg,#eef4ff,#ffffff)}
+
+/* ── 반응형 ── */
+@media(max-width:1200px){
+  .wrap{grid-template-columns:1fr}
+  .result-layout{grid-template-columns:1fr}
+  .circle{height:220px}
+  .circle:before{width:190px;height:190px}
+  .circle:after{width:150px;height:150px}
+  .grid4,.cards,.combat,.status-grid{grid-template-columns:repeat(2,1fr)}
+  .skill-panel{grid-template-columns:1fr}
+  .qbuttons{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:900px){
+  .floating-actions{right:0;left:0;top:auto;bottom:0;width:100%;border-radius:16px 16px 0 0;display:flex;flex-wrap:wrap;padding:10px 12px 12px;gap:6px;box-shadow:0 -8px 32px rgba(0,0,0,.45);opacity:1}
+  .floating-actions .float-title{width:100%;margin-bottom:0;font-size:11px}
+  .floating-actions button{flex:1;min-width:calc(33% - 6px);padding:10px 6px;font-size:11px}
+  body{padding-bottom:130px}
+}
+@media(max-width:720px){
+  .grid4,.cards,.combat,.status-grid{grid-template-columns:1fr}
+  .quick{grid-template-columns:1fr}
+  .top{align-items:flex-start;flex-direction:column}
+  .creator-corner{position:absolute;top:14px;right:14px}
+}
   </style>
 </head>
 <body>
-<div class="creator-corner"><img src="images/yasu.png" alt="제작자 스킨"><div class="creator-text">제작<br><b>_Ya_Su</b><br><span>문의: painonthetop</span></div></div>
+
+<!-- 제작자 코너 -->
+<div class="creator-corner">
+  <img src="images/yasu.png" alt="제작자 스킨">
+  <div class="creator-text">제작<br><b>_Ya_Su</b><br><span>문의: painonthetop</span></div>
+</div>
+
+<!-- 업데이트 로그 팝업 -->
 <div id="dokkaebiPopup" class="popup-backdrop">
   <div class="popup-box" style="max-width:720px">
     <button class="popup-close" onclick="closePopup()">×</button>
@@ -31,9 +229,7 @@
         목표 체력 / 물약 회복량 / 저항 기반 생존 최적화 추가
       </div>
       <h3 style="color:#55a7ff;margin:0 0 8px">편의 기능</h3>
-      <div style="color:#9fb3d9;margin-bottom:16px">
-        스킬 정보 / 단전 정보 저장
-      </div>
+      <div style="color:#9fb3d9;margin-bottom:16px">스킬 정보 / 단전 정보 저장</div>
       <h3 style="color:#ff8a33;margin:0 0 8px">기타 수정</h3>
       <div style="color:#9fb3d9">
         회피율 제거 → 저항% 변경<br>
@@ -48,222 +244,995 @@
   </div>
 </div>
 
+<!-- 최적화 모달 -->
+<div id="optModal" class="popup-backdrop">
+  <div class="popup-box" style="max-width:560px;padding:20px">
+    <button class="popup-close" onclick="closeOptimizeModal()">×</button>
+    <h2 id="optTitle">최적화</h2>
+    <div style="font-size:12px;color:#7f93c7;margin-top:6px">이미 찍혀있는 상태에서도 원하는 만큼만 추가 배분할 수 있습니다.</div>
+    <div class="grid grid4" style="margin-top:14px">
+      <div class="field block"><label>사용할 스텟 포인트</label><input id="optPoints" type="number" value="0"></div>
+      <div class="field block"><label>사용할 단전 포인트</label><input id="optDan" type="number" value="0"></div>
+    </div>
+    <div id="survivalFields" style="display:none;margin-top:12px" class="grid grid4">
+      <div class="field block"><label>목표 체력</label><input id="targetHp" type="number" value="0"></div>
+      <div class="field block"><label>목표 물약 회복량</label><input id="targetPotion" type="number" value="0"></div>
+      <div class="field block"><label>목표 저항</label><input id="targetResist" type="number" value="0"></div>
+    </div>
+    <div id="luckFields" style="display:none;margin-top:12px">
+      <div class="field block"><label>최소 예상 표기 공격력</label><input id="targetAtk" type="number" value="0"></div>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
+      <button onclick="closeOptimizeModal()">취소</button>
+      <button id="defaultOptimizeBtn" class="primary" onclick="runOptimization()">최적화 시작</button>
+      <button id="expOptimizeBtn" style="display:none" class="primary" onclick="runOptimization('exp')">경험치 최적화 시작</button>
+      <button id="dropOptimizeBtn" style="display:none" class="primary" onclick="runOptimization('drop')">드롭률 최적화 시작</button>
+    </div>
+  </div>
+</div>
+
+<!-- 메인 -->
 <main class="wrap">
-<header class="top"><div class="brand"><div class="logo">⚔️</div><div><h1>한월 RPG 도깨비 스텟 계산기</h1><div class="sub">STAT CALCULATOR</div></div></div><div class="actions"><button onclick="openOptimizeModal('attack')" class="primary">⚔️ 공격 최적화</button><button onclick="openOptimizeModal('survival')" class="survival-btn">🛡️ 생존 최적화</button><button onclick="openOptimizeModal('luck')" class="luck-btn">🍀 행운 최적화</button><button onclick="resetStats()">↺ 배분 초기화</button><button onclick="resetAll()" class="danger">⟲ 전체 초기화</button><button onclick="exportProfileCode()">▣ 현재 값 저장</button><button onclick="importProfileCode()">▣ 코드 가져오기</button></div></header>
+  <header class="top">
+    <div class="brand">
+      <div class="logo">⚔️</div>
+      <div><h1>한월 RPG 도깨비 스텟 계산기</h1><div class="sub">STAT CALCULATOR</div></div>
+    </div>
+    <div class="actions">
+      <button onclick="exportProfileCode()">▣ 현재 값 저장</button>
+      <button onclick="importProfileCode()">▣ 코드 가져오기</button>
+      <button onclick="toggleTheme()" id="themeBtn">☀️ 라이트모드</button>
+    </div>
+  </header>
 
-<section class="left">
-  <div class="section s1"><div class="title"><span class="badge">01</span><h2>기본 스텟 입력</h2></div><div class="grid grid4">
-    <div class="field block"><label>레벨</label><input id="level" type="number" value="0"></div><div class="field block"><label>레벨당 포인트</label><input id="pointsPerLevel" type="number" value="5" readonly></div><div class="field block"><label>총 포인트</label><input id="totalPointsBox" type="number" value="0" readonly></div><div class="field block"><label>남은 포인트</label><input id="remainPointsBox" type="number" value="0" readonly></div>
-    <div class="field block"><label>공격력</label><input id="baseAtk" type="number" value="0" step="0.01"></div><div class="field block"><label>공격력 %</label><input id="baseAtkPct" type="number" value="0" step="0.01"></div><div class="field block"><label>최종 공격력 %</label><input id="finalDmg" type="number" value="0" step="0.01"></div><div class="field block"><label>보스 공격력 %</label><input id="bossDmg" type="number" value="0" step="0.01"></div>
-    <div class="field block"><label>스킬 피해량 %</label><input id="skillDmg" type="number" value="0" step="0.01"></div><div class="field block"><label>스킬가속 %</label><input id="skillHaste" type="number" value="0" step="0.01"></div><div class="field block"><label>치명타 확률 %</label><input id="baseCritRate" type="number" value="0" step="0.01"></div><div class="field block"><label>치명타 공격력 %</label><input id="baseCritDmg" type="number" value="0" step="0.01"></div>
-    <div class="field block"><label>체력</label><input id="baseHp" type="number" value="0" step="0.01"></div><div class="field block"><label>체력 %</label><input id="baseHpPct" type="number" value="0" step="0.01"></div><div class="field block"><label>경험치 %</label><input id="baseExp" type="number" value="0" step="0.01"></div><div class="field block"><label>드랍률 %</label><input id="baseDrop" type="number" value="0" step="0.01"></div><div class="field block"><label>저항 %</label><input id="baseResist" type="number" value="0" step="0.01"></div><div class="field block"><label>물약 회복량 %</label><input id="basePotion" type="number" value="0" step="0.01"></div>
-  </div></div>
-  <div class="section s5"><div class="title"><span class="badge">02</span><h2>현재 표시 스텟</h2></div><div class="grid grid4"><div class="field block"><label>표기 힘</label><input id="baseStr" type="number" value="0" step="0.01"></div><div class="field block"><label>표기 민첩</label><input id="baseDex" type="number" value="0" step="0.01"></div><div class="field block"><label>표기 생명력</label><input id="baseVit" type="number" value="0" step="0.01"></div><div class="field block"><label>표기 행운</label><input id="baseLuk" type="number" value="0" step="0.01"></div></div></div>
-  <div class="section s4"><div class="title"><span class="badge">03</span><h2>스텟 % 입력</h2></div><div class="grid grid4"><div class="field block"><label>힘 %</label><input id="strPct" type="number" value="0" step="0.01"></div><div class="field block"><label>민첩 %</label><input id="dexPct" type="number" value="0" step="0.01"></div><div class="field block"><label>생명력 %</label><input id="vitPct" type="number" value="0" step="0.01"></div><div class="field block"><label>행운 %</label><input id="lukPct" type="number" value="0" step="0.01"></div></div></div>
-  <div class="section s4"><div class="title"><span class="badge">03+</span><h2>추가 스텟<div class="hint">잠재/진열대 등으로 추가할 예정이거나 빼고싶은 스텟을 기입하세요.</div></h2></div><div class="grid grid4"><div class="field block"><label>힘 +</label><input id="addStrFlat" type="number" value="0" step="0.01"></div><div class="field block"><label>힘 % 추가</label><input id="addStrPct" type="number" value="0" step="0.01"></div><div class="field block"><label>민첩 +</label><input id="addDexFlat" type="number" value="0" step="0.01"></div><div class="field block"><label>민첩 % 추가</label><input id="addDexPct" type="number" value="0" step="0.01"></div><div class="field block"><label>생명력 +</label><input id="addVitFlat" type="number" value="0" step="0.01"></div><div class="field block"><label>생명력 % 추가</label><input id="addVitPct" type="number" value="0" step="0.01"></div><div class="field block"><label>행운 +</label><input id="addLukFlat" type="number" value="0" step="0.01"></div><div class="field block"><label>행운 % 추가</label><input id="addLukPct" type="number" value="0" step="0.01"></div><div class="field block"><label>체력 % 추가</label><input id="addHpPct" type="number" value="0" step="0.01"></div><div class="field block"><label>공격력 % 추가</label><input id="addAtkPct" type="number" value="0" step="0.01"></div><div class="field block"><label>깡공 추가</label><input id="addFlatAtk" type="number" value="0" step="0.01"></div></div></div>
-  <div class="section s4"><div class="title"><span class="badge">04</span><h2>단전</h2></div><div class="hint">상단전: 체력 3% / 저항 1% · 중단전: 공격력 1% · 하단전: 드랍률 1.5% + 경험치 0.5%</div><div class="grid grid4"><div class="field block"><label>남은 단전 포인트</label><input id="danjeonPointsBox" type="number" value="0" readonly></div><div class="field block"><label>상단전</label><input id="topDan" type="number" value="0" step="1"></div><div class="field block"><label>중단전</label><input id="midDan" type="number" value="0" step="1"></div><div class="field block"><label>하단전</label><input id="botDan" type="number" value="0" step="1"></div></div></div>
-  <div class="section s2"><div class="title"><span class="badge">05</span><h2>배분 스텟</h2></div><div class="grid grid4"><div class="field block"><label>힘 추가</label><input id="addStr" type="number" value="0" step="1"></div><div class="field block"><label>민첩 추가</label><input id="addDex" type="number" value="0" step="1"></div><div class="field block"><label>생명력 추가</label><input id="addVit" type="number" value="0" step="1"></div><div class="field block"><label>행운 추가</label><input id="addLuk" type="number" value="0" step="1"></div></div></div>
-  <div class="section s3"><div class="title"><span class="badge">05+</span><h2>포인트 빠른 조정</h2></div><div class="quick"><div><div class="qname">力 힘</div><div class="qdesc">공격력 +1, 치명피해 +0.1%</div></div><div class="qbuttons"><button class="minus" onclick="spend('addStr',-100)">-100</button><button class="minus" onclick="spend('addStr',-10)">-10</button><button class="minus" onclick="spend('addStr',-1)">-1</button><button class="plus" onclick="spend('addStr',1)">+1</button><button class="plus" onclick="spend('addStr',10)">+10</button><button class="plus" onclick="spend('addStr',100)">+100</button></div></div><div class="quick"><div><div class="qname">敏 민첩</div><div class="qdesc">공격력% +0.3, 치확 +0.05%</div></div><div class="qbuttons"><button class="minus" onclick="spend('addDex',-100)">-100</button><button class="minus" onclick="spend('addDex',-10)">-10</button><button class="minus" onclick="spend('addDex',-1)">-1</button><button class="plus" onclick="spend('addDex',1)">+1</button><button class="plus" onclick="spend('addDex',10)">+10</button><button class="plus" onclick="spend('addDex',100)">+100</button></div></div><div class="quick"><div><div class="qname">命 생명력</div><div class="qdesc">체력 +5, 물약 +0.5%</div></div><div class="qbuttons"><button class="minus" onclick="spend('addVit',-100)">-100</button><button class="minus" onclick="spend('addVit',-10)">-10</button><button class="minus" onclick="spend('addVit',-1)">-1</button><button class="plus" onclick="spend('addVit',1)">+1</button><button class="plus" onclick="spend('addVit',10)">+10</button><button class="plus" onclick="spend('addVit',100)">+100</button></div></div><div class="quick"><div><div class="qname">幸 행운</div><div class="qdesc">경험치 +0.2%, 드랍률 +0.2%</div></div><div class="qbuttons"><button class="minus" onclick="spend('addLuk',-100)">-100</button><button class="minus" onclick="spend('addLuk',-10)">-10</button><button class="minus" onclick="spend('addLuk',-1)">-1</button><button class="plus" onclick="spend('addLuk',1)">+1</button><button class="plus" onclick="spend('addLuk',10)">+10</button><button class="plus" onclick="spend('addLuk',100)">+100</button></div></div></div>
-</section>
+  <!-- 플로팅 퀵메뉴 -->
+  <div class="floating-actions" id="floatingActions">
+    <div class="float-title" id="floatingDragHandle" style="cursor:move;user-select:none">QUICK MENU</div>
+    <button onclick="openOptimizeModal('attack')" class="primary">⚔️ 공격 최적화</button>
+    <button onclick="openOptimizeModal('survival')" class="survival-btn">🛡️ 생존 최적화</button>
+    <button onclick="openOptimizeModal('luck')" class="luck-btn">🍀 행운 최적화</button>
+    <button onclick="resetStats()" class="reset-btn">↺ 배분 초기화</button>
+    <button onclick="resetAll()" class="danger">⟲ 전체 초기화</button>
+  </div>
 
-<section class="right">
-  <div class="card result-card"><div class="result-head"><h2>◎ 최종 결과</h2></div><div class="result-layout"><div class="circle"><div class="main-num"><div class="name">예상 표기 공격력</div><div id="valAtk" class="val">0</div><div id="gainAtk" class="gain">+0</div></div></div><div><div class="cards"><div class="result"><div class="name">예상 힘</div><div id="valStr" class="value red">0</div><div id="gainStr" class="gain">+0</div></div><div class="result"><div class="name">예상 민첩</div><div id="valDex" class="value blue">0</div><div id="gainDex" class="gain">+0</div></div><div class="result"><div class="name">예상 생명력</div><div id="valVit" class="value green">0</div><div id="gainVit" class="gain">+0</div></div><div class="result"><div class="name">예상 행운</div><div id="valLuk" class="value gold">0</div><div id="gainLuk" class="gain">+0</div></div><div class="result"><div class="name">공격력 %</div><div id="valAtkPct" class="value blue">0%</div><div id="gainAtkPct" class="gain">+0%</div></div><div class="result"><div class="name">보스 공격력 %</div><div id="valBossPct" class="value orange">0%</div><div class="gain">현재값</div></div><div class="result"><div class="name">치명타 확률</div><div id="valCrit" class="value gold">0%</div><div id="gainCrit" class="gain">+0%</div></div><div class="result"><div class="name">치명타 공격력</div><div id="valCritDmg" class="value">0%</div><div id="gainCritDmg" class="gain">+0%</div></div><div class="result"><div class="name">스킬 가속 %</div><div id="valHaste" class="value blue">0%</div><div class="gain">쿨감 적용</div></div><div class="result"><div class="name">체력</div><div id="valHp" class="value green">0</div><div id="gainHp" class="gain">+0</div></div><div class="result"><div class="name">물약 회복량</div><div id="valPotion" class="value cyan">0%</div><div id="gainPotion" class="gain">+0%</div></div><div class="result"><div class="name">저항 %</div><div id="valResist" class="value blue">0%</div><div id="gainResist" class="gain">+0%</div></div><div class="result"><div class="name">경험치 보너스</div><div id="valExp" class="value blue">0%</div><div id="gainExp" class="gain">+0%</div></div><div class="result"><div class="name">드랍률 보너스</div><div id="valDrop" class="value purple">0%</div><div id="gainDrop" class="gain">+0%</div></div></div></div></div><div class="combat"><div class="result"><div class="name">전투 기대값</div><div id="expectedAtk" class="value gold">0</div></div><div class="result"><div class="name">보스 기대</div><div id="bossExpected" class="value red">0</div></div><div class="result"><div class="name">스킬 피해 포함</div><div id="skillExpected" class="value cyan">0</div></div></div></div>
-  <div class="card"><h3>스텟 상태</h3><div class="status-grid"><div class="status"><div class="st-name red">힘</div><div id="miniStr" class="st-val">0</div><div class="bar"><div id="barStr" class="fill red"></div></div></div><div class="status"><div class="st-name green">민첩</div><div id="miniDex" class="st-val">0</div><div class="bar"><div id="barDex" class="fill green"></div></div></div><div class="status"><div class="st-name gold">행운</div><div id="miniLuk" class="st-val">0</div><div class="bar"><div id="barLuk" class="fill gold"></div></div></div><div class="status"><div class="st-name purple">생명</div><div id="miniVit" class="st-val">0</div><div class="bar"><div id="barVit" class="fill purple"></div></div></div><div class="status"><div class="st-name blue">체력</div><div id="miniHp" class="st-val">0</div><div class="bar"><div id="barHp" class="fill blue"></div></div></div></div></div>
-  <div class="card skill-panel"><div><h3>♟ 스킬 DPM 계산</h3><div class="grid grid4" style="margin-bottom:12px"><div class="field block"><label>쿨타임 초</label><input id="skillCd" type="number" value="9" step="0.01"></div><div class="field block"><label>타수</label><input id="skillHits" type="number" value="1" step="1"></div><div class="field block"><label>배율</label><input id="skillMultiplier" type="number" value="4.31" step="0.01"></div><div class="field block"><label>보스 공격력 적용</label><div class="toggle-field"><span id="bossToggleText">ON</span><label class="switch"><input id="skillBossOn" type="checkbox" checked><span class="slider"></span></label></div></div></div><div class="skill-table"><div class="skill-row"><span>스킬 가속</span><b id="skillHasteLine">0%</b></div><div class="skill-row"><span>보스 공격력</span><b id="skillBossLine">0%</b></div><div class="skill-row"><span>적용 쿨타임</span><b id="realCdLine" class="cyan">0 초</b></div><div class="skill-row"><span>예상 1회 비 치명타 데미지</span><b id="skillNonCritDamage" class="cyan">0</b></div><div class="skill-row"><span>예상 1회 치명타 데미지</span><b id="skillCritDamage" class="gold">0</b></div><div class="skill-row"><span>1분 사용 횟수</span><b id="skillUseLine">0 회</b></div><div class="skill-row big"><span>1분 예상 DPM</span><b id="burstDpm">0</b></div></div></div><div class="skill-orb"><span>♟</span><small id="hasteRate">0%</small></div></div>
-  <div class="card"><h2>계산 상세</h2><div class="line"><span>총 / 사용 / 남은 포인트</span><b id="pointLine">0p / 0p / 0p</b></div><div class="line"><span>단전 총 / 사용 / 남은</span><b id="danjeonLine">0 / 0 / 0</b></div><div class="line"><span>추가 배분 힘/민/생/행</span><b id="addLine">0 / 0 / 0 / 0</b></div><div class="line"><span>공격력 계산</span><b id="atkFormula">0</b></div><div class="fixed"><b>힘</b>: 1당 공격력 +1, 치명타공격력 +0.1%<br><b>민첩</b>: 1당 공격력% +0.3, 치명타확률 +0.05%<br><b>생명력</b>: 1당 체력 +5, 물약회복량 +0.5%<br><b>행운</b>: 1당 경험치 +0.2%, 드랍률 +0.2%<br><b>상단전</b>: 체력 +3%, 저항 +1% / <b>중단전</b>: 공격력 +1% / <b>하단전</b>: 드랍률 +1.5%, 경험치 +0.5%<br><b>스킬가속</b>: 쿨타임 감소%로 계산</div></div>
-</section>
+  <!-- 좌측: 입력 패널 -->
+  <section class="left">
+
+    <!-- 01. 기본 스텟 -->
+    <div class="section s1">
+      <div class="title"><span class="badge">01</span><h2>기본 스텟 입력</h2></div>
+      <div class="grid grid4">
+        <div class="field block"><label>레벨</label><input id="level" type="number" value="0"></div>
+        <div class="field block"><label>레벨당 포인트</label><input id="pointsPerLevel" type="number" value="5" readonly></div>
+        <div class="field block"><label>총 포인트</label><input id="totalPointsBox" type="number" value="0" readonly></div>
+        <div class="field block"><label>남은 포인트</label><input id="remainPointsBox" type="number" value="0" readonly></div>
+        <div class="field block"><label>공격력</label><input id="baseAtk" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>공격력 %</label><input id="baseAtkPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>최종 공격력 %</label><input id="finalDmg" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>보스 공격력 %</label><input id="bossDmg" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>스킬 피해량 %</label><input id="skillDmg" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>스킬가속 %</label><input id="skillHaste" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>치명타 확률 %</label><input id="baseCritRate" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>치명타 공격력 %</label><input id="baseCritDmg" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>체력</label><input id="baseHp" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>체력 %</label><input id="baseHpPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>경험치 %</label><input id="baseExp" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>드랍률 %</label><input id="baseDrop" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>저항 %</label><input id="baseResist" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>물약 회복량 %</label><input id="basePotion" type="number" value="0" step="0.01"></div>
+      </div>
+    </div>
+
+    <!-- 02. 현재 표시 스텟 -->
+    <div class="section s5">
+      <div class="title"><span class="badge">02</span><h2>현재 표시 스텟</h2></div>
+      <div class="grid grid4">
+        <div class="field block"><label>표기 힘</label><input id="baseStr" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>표기 민첩</label><input id="baseDex" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>표기 생명력</label><input id="baseVit" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>표기 행운</label><input id="baseLuk" type="number" value="0" step="0.01"></div>
+      </div>
+    </div>
+
+    <!-- 03. 스텟 % -->
+    <div class="section s4">
+      <div class="title"><span class="badge">03</span><h2>스텟 % 입력</h2></div>
+      <div class="grid grid4">
+        <div class="field block"><label>힘 %</label><input id="strPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>민첩 %</label><input id="dexPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>생명력 %</label><input id="vitPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>행운 %</label><input id="lukPct" type="number" value="0" step="0.01"></div>
+      </div>
+    </div>
+
+    <!-- 03+. 추가 스텟 -->
+    <div class="section s4">
+      <div class="title"><span class="badge">03+</span><h2>추가 스텟<div class="hint">잠재/진열대 등으로 추가할 예정이거나 빼고싶은 스텟을 기입하세요.</div></h2></div>
+      <div class="grid grid4">
+        <div class="field block"><label>힘 +</label><input id="addStrFlat" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>힘 % 추가</label><input id="addStrPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>민첩 +</label><input id="addDexFlat" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>민첩 % 추가</label><input id="addDexPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>생명력 +</label><input id="addVitFlat" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>생명력 % 추가</label><input id="addVitPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>행운 +</label><input id="addLukFlat" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>행운 % 추가</label><input id="addLukPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>체력 % 추가</label><input id="addHpPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>공격력 % 추가</label><input id="addAtkPct" type="number" value="0" step="0.01"></div>
+        <div class="field block"><label>깡공 추가</label><input id="addFlatAtk" type="number" value="0" step="0.01"></div>
+      </div>
+    </div>
+
+    <!-- 04. 단전 -->
+    <div class="section s4">
+      <div class="title"><span class="badge">04</span><h2>단전</h2></div>
+      <div class="hint">상단전: 체력 3% / 저항 1% · 중단전: 공격력 1% · 하단전: 드랍률 1.5% + 경험치 0.5%</div>
+      <div class="grid grid4">
+        <div class="field block"><label>남은 단전 포인트</label><input id="danjeonPointsBox" type="number" value="0" readonly></div>
+        <div class="field block"><label>상단전</label><input id="topDan" type="number" value="0" step="1"></div>
+        <div class="field block"><label>중단전</label><input id="midDan" type="number" value="0" step="1"></div>
+        <div class="field block"><label>하단전</label><input id="botDan" type="number" value="0" step="1"></div>
+      </div>
+    </div>
+
+    <!-- 05. 배분 스텟 -->
+    <div class="section s2">
+      <div class="title"><span class="badge">05</span><h2>배분 스텟</h2></div>
+      <div class="grid grid4">
+        <div class="field block"><label>힘 추가</label><input id="addStr" type="number" value="0" step="1"></div>
+        <div class="field block"><label>민첩 추가</label><input id="addDex" type="number" value="0" step="1"></div>
+        <div class="field block"><label>생명력 추가</label><input id="addVit" type="number" value="0" step="1"></div>
+        <div class="field block"><label>행운 추가</label><input id="addLuk" type="number" value="0" step="1"></div>
+      </div>
+    </div>
+
+    <!-- 05+. 포인트 빠른 조정 -->
+    <div class="section s3">
+      <div class="title"><span class="badge">05+</span><h2>포인트 빠른 조정</h2></div>
+      <div class="quick">
+        <div><div class="qname">力 힘</div><div class="qdesc">공격력 +1, 치명피해 +0.1%</div></div>
+        <div class="qbuttons">
+          <button class="minus" onclick="spend('addStr',-100)">-100</button>
+          <button class="minus" onclick="spend('addStr',-10)">-10</button>
+          <button class="minus" onclick="spend('addStr',-1)">-1</button>
+          <button class="plus" onclick="spend('addStr',1)">+1</button>
+          <button class="plus" onclick="spend('addStr',10)">+10</button>
+          <button class="plus" onclick="spend('addStr',100)">+100</button>
+        </div>
+      </div>
+      <div class="quick">
+        <div><div class="qname">敏 민첩</div><div class="qdesc">공격력% +0.3, 치확 +0.05%</div></div>
+        <div class="qbuttons">
+          <button class="minus" onclick="spend('addDex',-100)">-100</button>
+          <button class="minus" onclick="spend('addDex',-10)">-10</button>
+          <button class="minus" onclick="spend('addDex',-1)">-1</button>
+          <button class="plus" onclick="spend('addDex',1)">+1</button>
+          <button class="plus" onclick="spend('addDex',10)">+10</button>
+          <button class="plus" onclick="spend('addDex',100)">+100</button>
+        </div>
+      </div>
+      <div class="quick">
+        <div><div class="qname">命 생명력</div><div class="qdesc">체력 +5, 물약 +0.5%</div></div>
+        <div class="qbuttons">
+          <button class="minus" onclick="spend('addVit',-100)">-100</button>
+          <button class="minus" onclick="spend('addVit',-10)">-10</button>
+          <button class="minus" onclick="spend('addVit',-1)">-1</button>
+          <button class="plus" onclick="spend('addVit',1)">+1</button>
+          <button class="plus" onclick="spend('addVit',10)">+10</button>
+          <button class="plus" onclick="spend('addVit',100)">+100</button>
+        </div>
+      </div>
+      <div class="quick">
+        <div><div class="qname">幸 행운</div><div class="qdesc">경험치 +0.2%, 드랍률 +0.2%</div></div>
+        <div class="qbuttons">
+          <button class="minus" onclick="spend('addLuk',-100)">-100</button>
+          <button class="minus" onclick="spend('addLuk',-10)">-10</button>
+          <button class="minus" onclick="spend('addLuk',-1)">-1</button>
+          <button class="plus" onclick="spend('addLuk',1)">+1</button>
+          <button class="plus" onclick="spend('addLuk',10)">+10</button>
+          <button class="plus" onclick="spend('addLuk',100)">+100</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 우측: 결과 패널 -->
+  <section class="right">
+
+    <!-- 최종 결과 -->
+    <div class="card result-card">
+      <div class="result-head"><h2>◎ 최종 결과</h2></div>
+      <div class="result-layout">
+        <div class="circle">
+          <svg width="230" height="230" viewBox="0 0 230 230">
+            <defs>
+              <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="50%" stop-color="#a855f7"/>
+                <stop offset="100%" stop-color="#38bdf8"/>
+              </linearGradient>
+              <filter id="arcGlow">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <circle class="arc-bg" cx="115" cy="115" r="96" stroke-dasharray="502 1000" stroke-dashoffset="-125" transform="rotate(90 115 115)"/>
+            <circle class="arc-fill" id="atkArc" cx="115" cy="115" r="96" stroke-dashoffset="-125" transform="rotate(90 115 115)" filter="url(#arcGlow)"/>
+            <circle cx="115" cy="115" r="78" fill="none" stroke="rgba(160,92,255,.15)" stroke-width="1"/>
+          </svg>
+          <div class="main-num">
+            <div class="name">예상 표기 공격력</div>
+            <div id="valAtk" class="val">0</div>
+            <div id="gainAtk" class="gain">+0</div>
+          </div>
+        </div>
+        <div>
+          <div class="cards">
+            <div class="result"><div class="name">예상 힘</div><div id="valStr" class="value red">0</div><div id="gainStr" class="gain">+0</div></div>
+            <div class="result"><div class="name">예상 민첩</div><div id="valDex" class="value blue">0</div><div id="gainDex" class="gain">+0</div></div>
+            <div class="result"><div class="name">예상 생명력</div><div id="valVit" class="value green">0</div><div id="gainVit" class="gain">+0</div></div>
+            <div class="result"><div class="name">예상 행운</div><div id="valLuk" class="value gold">0</div><div id="gainLuk" class="gain">+0</div></div>
+            <div class="result"><div class="name">공격력 %</div><div id="valAtkPct" class="value blue">0%</div><div id="gainAtkPct" class="gain">+0%</div></div>
+            <div class="result"><div class="name">보스 공격력 %</div><div id="valBossPct" class="value orange">0%</div><div class="gain">현재값</div></div>
+            <div class="result"><div class="name">치명타 확률</div><div id="valCrit" class="value gold">0%</div><div id="gainCrit" class="gain">+0%</div></div>
+            <div class="result"><div class="name">치명타 공격력</div><div id="valCritDmg" class="value">0%</div><div id="gainCritDmg" class="gain">+0%</div></div>
+            <div class="result"><div class="name">스킬 가속 %</div><div id="valHaste" class="value blue">0%</div><div class="gain">쿨감 적용</div></div>
+            <div class="result"><div class="name">체력</div><div id="valHp" class="value green">0</div><div id="gainHp" class="gain">+0</div></div>
+            <div class="result"><div class="name">물약 회복량</div><div id="valPotion" class="value cyan">0%</div><div id="gainPotion" class="gain">+0%</div></div>
+            <div class="result"><div class="name">저항 %</div><div id="valResist" class="value blue">0%</div><div id="gainResist" class="gain">+0%</div></div>
+            <div class="result"><div class="name">경험치 보너스</div><div id="valExp" class="value blue">0%</div><div id="gainExp" class="gain">+0%</div></div>
+            <div class="result"><div class="name">드랍률 보너스</div><div id="valDrop" class="value purple">0%</div><div id="gainDrop" class="gain">+0%</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="combat">
+        <div class="result"><div class="name">전투 기대값</div><div id="expectedAtk" class="value gold">0</div></div>
+        <div class="result"><div class="name">보스 기대</div><div id="bossExpected" class="value red">0</div></div>
+        <div class="result"><div class="name">스킬 피해 포함</div><div id="skillExpected" class="value cyan">0</div></div>
+      </div>
+    </div>
+
+    <!-- 스텟 상태 -->
+    <div class="card">
+      <h3>스텟 상태</h3>
+      <div class="status-grid">
+        <div class="status"><div class="st-name red">힘</div><div id="miniStr" class="st-val">0</div><div class="bar"><div id="barStr" class="fill red"></div></div></div>
+        <div class="status"><div class="st-name green">민첩</div><div id="miniDex" class="st-val">0</div><div class="bar"><div id="barDex" class="fill green"></div></div></div>
+        <div class="status"><div class="st-name gold">행운</div><div id="miniLuk" class="st-val">0</div><div class="bar"><div id="barLuk" class="fill gold"></div></div></div>
+        <div class="status"><div class="st-name purple">생명</div><div id="miniVit" class="st-val">0</div><div class="bar"><div id="barVit" class="fill purple"></div></div></div>
+        <div class="status"><div class="st-name blue">체력</div><div id="miniHp" class="st-val">0</div><div class="bar"><div id="barHp" class="fill blue"></div></div></div>
+      </div>
+    </div>
+
+    <!-- 스킬 DPM -->
+    <div class="card skill-panel">
+      <div>
+        <h3>♟ 스킬 DPM 계산</h3>
+        <div class="grid grid4" style="margin-bottom:12px">
+          <div class="field block"><label>쿨타임 초</label><input id="skillCd" type="number" value="9" step="0.01"></div>
+          <div class="field block"><label>타수</label><input id="skillHits" type="number" value="1" step="1"></div>
+          <div class="field block"><label>배율</label><input id="skillMultiplier" type="number" value="4.31" step="0.01"></div>
+          <div class="field block">
+            <label>보스 공격력 적용</label>
+            <div class="toggle-field">
+              <span id="bossToggleText">ON</span>
+              <label class="switch"><input id="skillBossOn" type="checkbox" checked><span class="slider"></span></label>
+            </div>
+          </div>
+        </div>
+        <div class="skill-table">
+          <div class="skill-row"><span>스킬 가속</span><b id="skillHasteLine">0%</b></div>
+          <div class="skill-row"><span>보스 공격력</span><b id="skillBossLine">0%</b></div>
+          <div class="skill-row"><span>적용 쿨타임</span><b id="realCdLine" class="cyan">0 초</b></div>
+          <div class="skill-row"><span>예상 1회 비 치명타 데미지</span><b id="skillNonCritDamage" class="cyan">0</b></div>
+          <div class="skill-row"><span>예상 1회 치명타 데미지</span><b id="skillCritDamage" class="gold">0</b></div>
+          <div class="skill-row"><span>1분 사용 횟수</span><b id="skillUseLine">0 회</b></div>
+          <div class="skill-row big"><span>1분 예상 DPM</span><b id="burstDpm">0</b></div>
+        </div>
+      </div>
+      <div class="skill-orb"><div class="orb-inner"><div id="burstDpmOrb" class="orb-val">0</div></div></div>
+    </div>
+
+    <!-- 계산 상세 -->
+    <div class="card">
+      <h2>계산 상세</h2>
+      <div class="line"><span>총 / 사용 / 남은 포인트</span><b id="pointLine">0p / 0p / 0p</b></div>
+      <div class="line"><span>단전 총 / 사용 / 남은</span><b id="danjeonLine">0 / 0 / 0</b></div>
+      <div class="line"><span>추가 배분 힘/민/생/행</span><b id="addLine">0 / 0 / 0 / 0</b></div>
+      <div class="line"><span>공격력 계산</span><b id="atkFormula">0</b></div>
+      <div class="fixed">
+        <b>힘</b>: 1당 공격력 +1, 치명타공격력 +0.1%<br>
+        <b>민첩</b>: 1당 공격력% +0.3, 치명타확률 +0.05%<br>
+        <b>생명력</b>: 1당 체력 +5, 물약회복량 +0.5%<br>
+        <b>행운</b>: 1당 경험치 +0.2%, 드랍률 +0.2%<br>
+        <b>상단전</b>: 체력 +3%, 저항 +1% / <b>중단전</b>: 공격력 +1% / <b>하단전</b>: 드랍률 +1.5%, 경험치 +0.5%<br>
+        <b>스킬가속</b>: 쿨타임 감소%로 계산
+      </div>
+    </div>
+
+  </section>
 </main>
 
-<div id="optModal" class="popup-backdrop"><div class="popup-box" style="max-width:560px;padding:20px"><button class="popup-close" onclick="closeOptimizeModal()">×</button><h2 id="optTitle">최적화</h2><div style="font-size:12px;color:#7f93c7;margin-top:6px">이미 찍혀있는 상태에서도 원하는 만큼만 추가 배분할 수 있습니다.</div><div class="grid grid4" style="margin-top:14px"><div class="field block"><label>사용할 스텟 포인트</label><input id="optPoints" type="number" value="0"></div><div class="field block"><label>사용할 단전 포인트</label><input id="optDan" type="number" value="0"></div></div><div id="survivalFields" style="display:none;margin-top:12px" class="grid grid4"><div class="field block"><label>목표 체력</label><input id="targetHp" type="number" value="0"></div><div class="field block"><label>목표 물약 회복량</label><input id="targetPotion" type="number" value="0"></div><div class="field block"><label>목표 저항</label><input id="targetResist" type="number" value="0"></div></div><div id="luckFields" style="display:none;margin-top:12px"><div class="field block"><label>최소 예상 표기 공격력</label><input id="targetAtk" type="number" value="0"></div></div><div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
-  <button onclick="closeOptimizeModal()">취소</button>
-  <button id="defaultOptimizeBtn" class="primary" onclick="runOptimization()">최적화 시작</button>
-  <button id="expOptimizeBtn" style="display:none" class="primary" onclick="runOptimization('exp')">경험치 최적화 시작</button>
-  <button id="dropOptimizeBtn" style="display:none" class="primary" onclick="runOptimization('drop')">드롭률 최적화 시작</button>
-</div></div></div>
 <footer style="text-align:center;padding:18px;color:#6f7f9f;font-size:13px;opacity:.7">© 2026. _Ya_Su All rights reserved.</footer>
 
 <script>
-const $=id=>document.getElementById(id);const num=id=>Number($(id)?.value||0);const fmt=(n,d=2)=>Number(n||0).toLocaleString('ko-KR',{maximumFractionDigits:d,minimumFractionDigits:d});const pct=(n,d=2)=>fmt(n,d)+'%';
-const F={strAtk:1,strCritDmg:.1,dexAtkPct:.3,dexCrit:.05,vitHp:5,vitPotion:.5,lukExp:.2,lukDrop:.2};
-const addIds=['addStr','addDex','addVit','addLuk'];const danIds=['topDan','midDan','botDan'];
-function totalPoints(){return Math.max(0,Math.floor(num('level')*5))}function usedPoints(){return addIds.reduce((s,id)=>s+Math.max(0,Math.floor(num(id))),0)}function remainPoints(){return totalPoints()-usedPoints()}
-function totalDanjeon(){const lv=num('level');let total=1;if(lv>=30)total+=1;if(lv>=60)total+=3;if(lv>=90)total+=5;if(lv>=120)total+=7;if(lv>=150)total+=9;if(lv>=180)total+=11;if(lv>=200)total+=13;return total}function usedDanjeon(){return danIds.reduce((s,id)=>s+Math.max(0,Math.floor(num(id))),0)}function remainDanjeon(){return totalDanjeon()-usedDanjeon()}
-function statRaw(display,pct){const m=1+pct/100;return m===0?0:display/m}
-function calcData(){const strPct=num('strPct'),dexPct=num('dexPct'),vitPct=num('vitPct'),lukPct=num('lukPct');const nStrPct=strPct+num('addStrPct'),nDexPct=dexPct+num('addDexPct'),nVitPct=vitPct+num('addVitPct'),nLukPct=lukPct+num('addLukPct');const newStr=(statRaw(num('baseStr'),strPct)+num('addStr')+num('addStrFlat'))*(1+nStrPct/100);const newDex=(statRaw(num('baseDex'),dexPct)+num('addDex')+num('addDexFlat'))*(1+nDexPct/100);const newVit=(statRaw(num('baseVit'),vitPct)+num('addVit')+num('addVitFlat'))*(1+nVitPct/100);const newLuk=(statRaw(num('baseLuk'),lukPct)+num('addLuk')+num('addLukFlat'))*(1+nLukPct/100);const gainStr=newStr-num('baseStr'),gainDex=newDex-num('baseDex'),gainVit=newVit-num('baseVit'),gainLuk=newLuk-num('baseLuk');const danAtkPct=num('midDan'),danHpPct=num('topDan')*3,danResist=num('topDan'),danExp=num('botDan')*.5,danDrop=num('botDan')*1.5;const baseRawAtk=statRaw(num('baseAtk'),num('baseAtkPct'));const newAtkPct=num('baseAtkPct')+gainDex*F.dexAtkPct+num('addAtkPct')+danAtkPct;const newAtk=(baseRawAtk+gainStr*F.strAtk+num('addFlatAtk'))*(1+newAtkPct/100);const newCrit=num('baseCritRate')+gainDex*F.dexCrit;const newCritDmg=num('baseCritDmg')+gainStr*F.strCritDmg;const hpPct=num('baseHpPct'),newHpPct=hpPct+num('addHpPct')+danHpPct;const baseRawHp=statRaw(num('baseHp'),hpPct);const newHp=(baseRawHp+gainVit*F.vitHp)*(1+newHpPct/100);const newResist=num('baseResist')+danResist;const newPotion=num('basePotion')+gainVit*F.vitPotion;const newExp=num('baseExp')+gainLuk*F.lukExp+danExp;const newDrop=num('baseDrop')+gainLuk*F.lukDrop+danDrop;const critMulti=1+Math.min(newCrit,100)/100*((newCritDmg/100)-1);const expectedAtk=newAtk*critMulti*(1+num('finalDmg')/100);const skillExpected=expectedAtk*(1+num('skillDmg')/100);const bossExpected=skillExpected*(1+num('bossDmg')/100);const haste=Math.min(Math.max(num('skillHaste'),0),99);const realCd=Math.max(num('skillCd'),.01)*(1-haste/100);const uses=Math.floor(60/realCd);const skillHits=Math.max(num('skillHits'),0),skillMultiplier=Math.max(num('skillMultiplier'),0);const bossOn=$('skillBossOn')?$('skillBossOn').checked:true;const bossMulti=bossOn?(1+num('bossDmg')/100):1;const nonCritBase=newAtk*(1+num('finalDmg')/100)*(1+num('skillDmg')/100)*bossMulti;const critBase=nonCritBase*(newCritDmg/100);const skillNonCritDamage=nonCritBase*skillMultiplier*skillHits;const skillCritDamage=critBase*skillMultiplier*skillHits;const skillExpectedOnce=(bossOn?bossExpected:skillExpected)*skillMultiplier*skillHits;const burstDpm=skillExpectedOnce*uses;return{newStr,newDex,newVit,newLuk,gainStr,gainDex,gainVit,gainLuk,baseRawAtk,newAtkPct,newAtk,newCrit,newCritDmg,newHp,newResist,newPotion,newExp,newDrop,expectedAtk,skillExpected,bossExpected,skillNonCritDamage,skillCritDamage,burstDpm,realCd,uses,haste,bossOn}}
-function put(name,now,gain,newv,isPct=false){const val=$('val'+name),g=$('gain'+name);if(val)val.textContent=isPct?pct(newv):fmt(newv);if(g)g.textContent=(gain>=0?'+':'')+(isPct?pct(gain):fmt(gain))}function bar(id,val,max){const el=$(id);if(el)el.style.width=Math.max(0,Math.min(100,max?val/max*100:0))+'%'}
-function validateLimits(show=true){if(usedPoints()>totalPoints()){if(show)alert('스텟 포인트가 초과됨');return false}if(usedDanjeon()>totalDanjeon()){if(show)alert('단전 포인트가 초과됨');return false}return true}
-function calc(){const d=calcData();$('totalPointsBox').value=totalPoints();$('remainPointsBox').value=Math.max(0,remainPoints());$('danjeonPointsBox').value=Math.max(0,remainDanjeon());put('Atk',num('baseAtk'),d.newAtk-num('baseAtk'),d.newAtk);put('Str',num('baseStr'),d.gainStr,d.newStr);put('Dex',num('baseDex'),d.gainDex,d.newDex);put('Vit',num('baseVit'),d.gainVit,d.newVit);put('Luk',num('baseLuk'),d.gainLuk,d.newLuk);put('AtkPct',num('baseAtkPct'),d.newAtkPct-num('baseAtkPct'),d.newAtkPct,true);put('Crit',num('baseCritRate'),d.newCrit-num('baseCritRate'),d.newCrit,true);put('CritDmg',num('baseCritDmg'),d.newCritDmg-num('baseCritDmg'),d.newCritDmg,true);put('Hp',num('baseHp'),d.newHp-num('baseHp'),d.newHp);put('Resist',num('baseResist'),d.newResist-num('baseResist'),d.newResist,true);put('Potion',num('basePotion'),d.newPotion-num('basePotion'),d.newPotion,true);put('Exp',num('baseExp'),d.newExp-num('baseExp'),d.newExp,true);put('Drop',num('baseDrop'),d.newDrop-num('baseDrop'),d.newDrop,true);$('valBossPct').textContent=pct(num('bossDmg'));$('valHaste').textContent=pct(num('skillHaste'));$('expectedAtk').textContent=fmt(d.expectedAtk);$('skillExpected').textContent=fmt(d.skillExpected);$('bossExpected').textContent=fmt(d.bossExpected);$('skillNonCritDamage').textContent=fmt(d.skillNonCritDamage,0);$('skillCritDamage').textContent=fmt(d.skillCritDamage,0);$('burstDpm').textContent=fmt(d.burstDpm,0);$('skillHasteLine').textContent=pct(d.haste);$('skillBossLine').textContent=pct(num('bossDmg'));$('realCdLine').textContent=fmt(d.realCd,2)+' 초';$('skillUseLine').textContent=fmt(d.uses,0)+' 회';$('bossToggleText').textContent=d.bossOn?'ON':'OFF';$('hasteRate').textContent=pct(d.haste);$('pointLine').textContent=`${fmt(totalPoints(),0)}p / ${fmt(usedPoints(),0)}p / ${fmt(remainPoints(),0)}p`;$('danjeonLine').textContent=`${fmt(totalDanjeon(),0)} / ${fmt(usedDanjeon(),0)} / ${fmt(remainDanjeon(),0)}`;$('addLine').textContent=`${fmt(num('addStr'),0)} / ${fmt(num('addDex'),0)} / ${fmt(num('addVit'),0)} / ${fmt(num('addLuk'),0)}`;$('atkFormula').textContent=`(${fmt(d.baseRawAtk)} + 힘증가 ${fmt(d.gainStr)} + 깡공 ${fmt(num('addFlatAtk'))}) × (1 + ${fmt(d.newAtkPct)}%) = ${fmt(d.newAtk)}`;$('miniStr').textContent=fmt(d.newStr,0);$('miniDex').textContent=fmt(d.newDex,0);$('miniLuk').textContent=fmt(d.newLuk,0);$('miniVit').textContent=fmt(d.newVit,0);$('miniHp').textContent=fmt(d.newHp,0);const m=Math.max(d.newStr,d.newDex,d.newLuk,d.newVit,d.newHp/5,1);bar('barStr',d.newStr,m);bar('barDex',d.newDex,m);bar('barLuk',d.newLuk,m);bar('barVit',d.newVit,m);bar('barHp',d.newHp/5,m)}
-function spend(id,amount){const cur=Math.floor(num(id));if(amount>0&&remainPoints()<amount)return alert('남은 포인트가 부족함');if(amount<0&&cur+amount<0)return alert('0 밑으로는 뺄 수 없음');$(id).value=cur+amount;calc();saveAuto()}function resetStats(){[...addIds,...danIds].forEach(id=>$(id).value=0);calc();saveAuto()}function resetAll(){document.querySelectorAll('input[type="number"]').forEach(input=>{if(input.id==='pointsPerLevel')input.value=5;else input.value=0});calc();saveAuto()}
-function gainIf(id,metric){
-  const before=calcData()[metric];
-  const old=num(id);
-  $(id).value=old+1;
-  const after=calcData()[metric];
-  $(id).value=old;
-  return after-before;
+// ═══════════════════════════════════════════════
+// 유틸리티
+// ═══════════════════════════════════════════════
+
+const $ = id => document.getElementById(id);
+const num = id => Number($(id)?.value || 0);
+const fmt = (n, d = 2) => Number(n || 0).toLocaleString('ko-KR', { maximumFractionDigits: d, minimumFractionDigits: d });
+const pct = (n, d = 2) => fmt(n, d) + '%';
+
+// ═══════════════════════════════════════════════
+// 게임 상수
+// ═══════════════════════════════════════════════
+
+// 스텟 1당 효과
+const STAT_FACTOR = {
+  strAtk:    1,    // 힘 1당 깡공
+  strCritDmg: 0.1, // 힘 1당 치명타공격력%
+  dexAtkPct:  0.3, // 민첩 1당 공격력%
+  dexCrit:   0.05, // 민첩 1당 치명타확률%
+  vitHp:      5,   // 생명력 1당 체력
+  vitPotion:  0.5, // 생명력 1당 물약회복량%
+  lukExp:     0.2, // 행운 1당 경험치%
+  lukDrop:    0.2, // 행운 1당 드랍률%
+};
+
+// 단전 레벨별 누적 포인트 지급
+const DANJEON_THRESHOLDS = [
+  { lv:   0, pts: 1 },
+  { lv:  30, pts: 1 },
+  { lv:  60, pts: 3 },
+  { lv:  90, pts: 5 },
+  { lv: 120, pts: 7 },
+  { lv: 150, pts: 9 },
+  { lv: 180, pts: 11 },
+  { lv: 200, pts: 13 },
+];
+
+// 배분 스텟 / 단전 ID 목록
+const ALLOC_STAT_IDS = ['addStr', 'addDex', 'addVit', 'addLuk'];
+const DANJEON_IDS    = ['topDan', 'midDan', 'botDan'];
+
+// ═══════════════════════════════════════════════
+// 포인트 계산
+// ═══════════════════════════════════════════════
+
+function totalPoints()  { return Math.max(0, Math.floor(num('level') * 5)); }
+function usedPoints()   { return ALLOC_STAT_IDS.reduce((s, id) => s + Math.max(0, Math.floor(num(id))), 0); }
+function remainPoints() { return totalPoints() - usedPoints(); }
+
+function totalDanjeon() {
+  const lv = num('level');
+  return DANJEON_THRESHOLDS.reduce((total, t) => lv >= t.lv ? total + t.pts : total, 0);
 }
-function addOne(id){$(id).value=num(id)+1}
-function spendBest(ids,metric){
-  let best=ids[0],bestGain=-Infinity;
-  for(const id of ids){
-    const g=gainIf(id,metric);
-    if(g>bestGain){bestGain=g;best=id}
+function usedDanjeon()   { return DANJEON_IDS.reduce((s, id) => s + Math.max(0, Math.floor(num(id))), 0); }
+function remainDanjeon() { return totalDanjeon() - usedDanjeon(); }
+
+// ═══════════════════════════════════════════════
+// 핵심 계산 레이어
+// ═══════════════════════════════════════════════
+
+/**
+ * 표기 스텟에서 % 적용 전 원본 값 역산
+ * display = raw * (1 + pct/100)  →  raw = display / (1 + pct/100)
+ */
+function statRaw(display, pctVal) {
+  const multiplier = 1 + pctVal / 100;
+  return multiplier === 0 ? 0 : display / multiplier;
+}
+
+/**
+ * 스텟 계산 — 모든 최종 스텟값 반환
+ */
+function calcStats() {
+  const strPct = num('strPct'), dexPct = num('dexPct'), vitPct = num('vitPct'), lukPct = num('lukPct');
+  const totalStrPct = strPct + num('addStrPct');
+  const totalDexPct = dexPct + num('addDexPct');
+  const totalVitPct = vitPct + num('addVitPct');
+  const totalLukPct = lukPct + num('addLukPct');
+
+  const newStr = (statRaw(num('baseStr'), strPct) + num('addStr') + num('addStrFlat')) * (1 + totalStrPct / 100);
+  const newDex = (statRaw(num('baseDex'), dexPct) + num('addDex') + num('addDexFlat')) * (1 + totalDexPct / 100);
+  const newVit = (statRaw(num('baseVit'), vitPct) + num('addVit') + num('addVitFlat')) * (1 + totalVitPct / 100);
+  const newLuk = (statRaw(num('baseLuk'), lukPct) + num('addLuk') + num('addLukFlat')) * (1 + totalLukPct / 100);
+
+  const gainStr = newStr - num('baseStr');
+  const gainDex = newDex - num('baseDex');
+  const gainVit = newVit - num('baseVit');
+  const gainLuk = newLuk - num('baseLuk');
+
+  return { newStr, newDex, newVit, newLuk, gainStr, gainDex, gainVit, gainLuk };
+}
+
+/**
+ * 전투 계산 — 공격력, 치명타, 체력 등 최종 전투 수치 반환
+ */
+function calcCombat(stats) {
+  const { gainStr, gainDex, gainVit, gainLuk } = stats;
+
+  // 단전 효과
+  const danAtkPct  = num('midDan');
+  const danHpPct   = num('topDan') * 3;
+  const danResist  = num('topDan');
+  const danExp     = num('botDan') * 0.5;
+  const danDrop    = num('botDan') * 1.5;
+
+  // 공격력
+  const baseRawAtk = statRaw(num('baseAtk'), num('baseAtkPct'));
+  const newAtkPct  = num('baseAtkPct') + gainDex * STAT_FACTOR.dexAtkPct + num('addAtkPct') + danAtkPct;
+  const newAtk     = (baseRawAtk + gainStr * STAT_FACTOR.strAtk + num('addFlatAtk')) * (1 + newAtkPct / 100);
+
+  // 치명타
+  const newCrit    = num('baseCritRate') + gainDex * STAT_FACTOR.dexCrit;
+  const newCritDmg = num('baseCritDmg') + gainStr * STAT_FACTOR.strCritDmg;
+
+  // 체력
+  const hpPct      = num('baseHpPct');
+  const newHpPct   = hpPct + num('addHpPct') + danHpPct;
+  const baseRawHp  = statRaw(num('baseHp'), hpPct);
+  const newHp      = (baseRawHp + gainVit * STAT_FACTOR.vitHp) * (1 + newHpPct / 100);
+
+  // 기타
+  const newResist  = num('baseResist') + danResist;
+  const newPotion  = num('basePotion') + gainVit * STAT_FACTOR.vitPotion;
+  const newExp     = num('baseExp')    + gainLuk * STAT_FACTOR.lukExp  + danExp;
+  const newDrop    = num('baseDrop')   + gainLuk * STAT_FACTOR.lukDrop + danDrop;
+
+  // 기대값
+  const critMulti    = 1 + Math.min(newCrit, 100) / 100 * (newCritDmg / 100 - 1);
+  const expectedAtk  = newAtk * critMulti * (1 + num('finalDmg') / 100);
+  const skillExpected = expectedAtk * (1 + num('skillDmg') / 100);
+  const bossExpected  = skillExpected * (1 + num('bossDmg') / 100);
+
+  return { baseRawAtk, newAtkPct, newAtk, newCrit, newCritDmg, newHp, newResist, newPotion, newExp, newDrop, expectedAtk, skillExpected, bossExpected };
+}
+
+/**
+ * 스킬 DPM 계산
+ */
+function calcSkill(combat) {
+  const { newAtk, newCritDmg } = combat;
+  const haste       = Math.min(Math.max(num('skillHaste'), 0), 99);
+  const realCd      = Math.max(num('skillCd'), 0.01) * (1 - haste / 100);
+  const uses        = Math.floor(60 / realCd);
+  const skillHits   = Math.max(num('skillHits'), 0);
+  const multiplier  = Math.max(num('skillMultiplier'), 0);
+  const bossOn      = $('skillBossOn') ? $('skillBossOn').checked : true;
+  const bossMulti   = bossOn ? (1 + num('bossDmg') / 100) : 1;
+
+  const nonCritBase        = newAtk * (1 + num('finalDmg') / 100) * (1 + num('skillDmg') / 100) * bossMulti;
+  const critBase           = nonCritBase * (newCritDmg / 100);
+  const skillNonCritDamage = nonCritBase * multiplier * skillHits;
+  const skillCritDamage    = critBase * multiplier * skillHits;
+
+  const baseForDpm   = bossOn ? combat.bossExpected : combat.skillExpected;
+  const burstDpm     = baseForDpm * multiplier * skillHits * uses;
+
+  return { haste, realCd, uses, skillNonCritDamage, skillCritDamage, burstDpm, bossOn };
+}
+
+/**
+ * 전체 데이터 계산 — calcStats + calcCombat + calcSkill 합산
+ */
+let arcMaxAtk = 1;
+function updateArc(newAtk) {
+  const arc = document.getElementById('atkArc');
+  if (!arc) return;
+  if (newAtk > arcMaxAtk) arcMaxAtk = newAtk;
+  const filled = Math.max(0, Math.min(502, arcMaxAtk > 0 ? newAtk/arcMaxAtk*502 : 0));
+  arc.style.strokeDasharray = filled + ' 1000';
+}
+
+// 카운트업 애니메이션
+let orbTarget = 0, orbCurrent = 0, orbRaf = null;
+function animateOrb(target) {
+  if (orbRaf) cancelAnimationFrame(orbRaf);
+  orbTarget = target;
+  const start = orbCurrent;
+  const diff  = target - start;
+  const dur   = 500;
+  const t0    = performance.now();
+  function step(now) {
+    const p = Math.min((now - t0) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 3); // ease-out cubic
+    orbCurrent = start + diff * ease;
+    const el = document.getElementById('burstDpmOrb');
+    if (el) el.textContent = fmt(orbCurrent, 0);
+    if (p < 1) orbRaf = requestAnimationFrame(step);
+    else { orbCurrent = target; if (el) el.textContent = fmt(target, 0); }
   }
-  addOne(best);
+  orbRaf = requestAnimationFrame(step);
 }
-function spendBestAttackPoint(){spendBest(['addStr','addDex'],'expectedAtk')}
-function spendBestAttackDan(){spendBest(['midDan','topDan','botDan'],'expectedAtk')}
-function spendBestAtkPoint(){spendBest(['addStr','addDex'],'newAtk')}
-function spendBestAtkDan(){spendBest(['midDan','topDan','botDan'],'newAtk')}
-function survivalScore(targets){
-  if(targets.length===0)return 0;
-  const c=calcData();
-  return targets.reduce((sum,t)=>{
-    const diff=Math.abs(t.target-c[t.key]);
-    return sum + diff / Math.max(1,Math.abs(t.target));
-  },0);
+function calcData() {
+  const stats  = calcStats();
+  const combat = calcCombat(stats);
+  const skill  = calcSkill(combat);
+  return { ...stats, ...combat, ...skill };
 }
-function bestSurvivalMove(targets,canPoint,canDan){
-  const before=survivalScore(targets);
-  let best=null,bestGain=0;
-  const candidates=[];
-  if(canPoint)candidates.push('addVit');
-  if(canDan)candidates.push('topDan');
-  for(const id of candidates){
-    const old=num(id);
-    $(id).value=old+1;
-    const after=survivalScore(targets);
-    const gain=before-after;
-    $(id).value=old;
-    if(gain>bestGain){bestGain=gain;best=id}
+
+// ═══════════════════════════════════════════════
+// DOM 렌더링 레이어
+// ═══════════════════════════════════════════════
+
+/**
+ * 결과 카드 값+증가량 업데이트
+ */
+function renderResultCard(name, newVal, gain, isPct = false) {
+  const valEl  = $('val' + name);
+  const gainEl = $('gain' + name);
+  if (valEl)  valEl.textContent  = isPct ? pct(newVal) : fmt(newVal);
+  if (gainEl) gainEl.textContent = (gain >= 0 ? '+' : '') + (isPct ? pct(gain) : fmt(gain));
+}
+
+/**
+ * 상태 바 업데이트
+ */
+function renderBar(id, val, max) {
+  const el = $(id);
+  if (el) el.style.width = Math.max(0, Math.min(100, max ? val / max * 100 : 0)) + '%';
+}
+
+/**
+ * 전체 UI 렌더링
+ */
+function renderUI(d) {
+  // 포인트 표시
+  $('totalPointsBox').value    = totalPoints();
+  $('remainPointsBox').value   = Math.max(0, remainPoints());
+  $('danjeonPointsBox').value  = Math.max(0, remainDanjeon());
+
+  // 스텟 결과 카드 (name, 최종값, 증가량, 퍼센트여부)
+  renderResultCard('Atk',     d.newAtk,     d.newAtk     - num('baseAtk'));
+  renderResultCard('Str',     d.newStr,     d.gainStr);
+  renderResultCard('Dex',     d.newDex,     d.gainDex);
+  renderResultCard('Vit',     d.newVit,     d.gainVit);
+  renderResultCard('Luk',     d.newLuk,     d.gainLuk);
+  renderResultCard('AtkPct',  d.newAtkPct,  d.newAtkPct  - num('baseAtkPct'), true);
+  renderResultCard('Crit',    d.newCrit,    d.newCrit    - num('baseCritRate'), true);
+  renderResultCard('CritDmg', d.newCritDmg, d.newCritDmg - num('baseCritDmg'), true);
+  renderResultCard('Hp',      d.newHp,      d.newHp      - num('baseHp'));
+  renderResultCard('Resist',  d.newResist,  d.newResist  - num('baseResist'), true);
+  renderResultCard('Potion',  d.newPotion,  d.newPotion  - num('basePotion'), true);
+  renderResultCard('Exp',     d.newExp,     d.newExp     - num('baseExp'), true);
+  renderResultCard('Drop',    d.newDrop,    d.newDrop    - num('baseDrop'), true);
+
+  // 고정 표시 항목
+  $('valBossPct').textContent = pct(num('bossDmg'));
+  $('valHaste').textContent   = pct(num('skillHaste'));
+
+  // 전투 기대값
+  $('expectedAtk').textContent  = fmt(d.expectedAtk);
+  $('skillExpected').textContent = fmt(d.skillExpected);
+  $('bossExpected').textContent  = fmt(d.bossExpected);
+
+  // 스킬 DPM
+  $('skillNonCritDamage').textContent = fmt(d.skillNonCritDamage, 0);
+  $('skillCritDamage').textContent    = fmt(d.skillCritDamage, 0);
+  $('burstDpm').textContent           = fmt(d.burstDpm, 0);
+  $('skillHasteLine').textContent     = pct(d.haste);
+  $('skillBossLine').textContent      = pct(num('bossDmg'));
+  $('realCdLine').textContent         = fmt(d.realCd, 2) + ' 초';
+  $('skillUseLine').textContent       = fmt(d.uses, 0) + ' 회';
+  $('bossToggleText').textContent     = d.bossOn ? 'ON' : 'OFF';
+  animateOrb(d.burstDpm);
+
+  // 계산 상세
+  $('pointLine').textContent   = `${fmt(totalPoints(), 0)}p / ${fmt(usedPoints(), 0)}p / ${fmt(remainPoints(), 0)}p`;
+  $('danjeonLine').textContent = `${fmt(totalDanjeon(), 0)} / ${fmt(usedDanjeon(), 0)} / ${fmt(remainDanjeon(), 0)}`;
+  $('addLine').textContent     = `${fmt(num('addStr'), 0)} / ${fmt(num('addDex'), 0)} / ${fmt(num('addVit'), 0)} / ${fmt(num('addLuk'), 0)}`;
+  $('atkFormula').textContent  = `(${fmt(d.baseRawAtk)} + 힘증가 ${fmt(d.gainStr)} + 깡공 ${fmt(num('addFlatAtk'))}) × (1 + ${fmt(d.newAtkPct)}%) = ${fmt(d.newAtk)}`;
+
+  // 스텟 상태 미니 카드
+  $('miniStr').textContent = fmt(d.newStr, 0);
+  $('miniDex').textContent = fmt(d.newDex, 0);
+  $('miniLuk').textContent = fmt(d.newLuk, 0);
+  $('miniVit').textContent = fmt(d.newVit, 0);
+  $('miniHp').textContent  = fmt(d.newHp, 0);
+
+  // 상태 바
+  const barMax = Math.max(d.newStr, d.newDex, d.newLuk, d.newVit, d.newHp / 5, num('baseStr'), num('baseDex'), num('baseLuk'), num('baseVit'), 1);
+  renderBar('barStr', d.newStr,      barMax);
+  renderBar('barDex', d.newDex,      barMax);
+  renderBar('barLuk', d.newLuk,      barMax);
+  renderBar('barVit', d.newVit,      barMax);
+  renderBar('barHp',  d.newHp / 5,   barMax);
+}
+
+/**
+ * 메인 계산 + 렌더링 진입점
+ */
+function calc() {
+  const d = calcData();
+  updateArc(d.newAtk);
+  renderUI(d);
+}
+
+// ═══════════════════════════════════════════════
+// 포인트 조작
+// ═══════════════════════════════════════════════
+
+function validateLimits(show = true) {
+  if (usedPoints() > totalPoints()) {
+    if (show) alert('스텟 포인트가 초과됨');
+    return false;
   }
-  return best;
+  if (usedDanjeon() > totalDanjeon()) {
+    if (show) alert('단전 포인트가 초과됨');
+    return false;
+  }
+  return true;
 }
-let optimizeMode='attack';
-function openOptimizeModal(mode){
-  optimizeMode=mode;
-  $('optTitle').textContent=mode==='attack'?'공격 최적화':mode==='survival'?'생존 최적화':'행운 최적화';
-  $('optPoints').value=Math.max(0,remainPoints());
-  $('optDan').value=Math.max(0,remainDanjeon());
-  $('survivalFields').style.display=mode==='survival'?'grid':'none';
-  $('luckFields').style.display=mode==='luck'?'block':'none';
-  $('defaultOptimizeBtn').style.display=mode==='luck'?'none':'inline-flex';
-  $('expOptimizeBtn').style.display=mode==='luck'?'inline-flex':'none';
-  $('dropOptimizeBtn').style.display=mode==='luck'?'inline-flex':'none';
+
+function spend(id, amount) {
+  const cur = Math.floor(num(id));
+  if (amount > 0 && remainPoints() < amount) return alert('남은 포인트가 부족함');
+  if (amount < 0 && cur + amount < 0)         return alert('0 밑으로는 뺄 수 없음');
+  $(id).value = cur + amount;
+  calc();
+  saveAuto();
+}
+
+function resetStats() {
+  [...ALLOC_STAT_IDS, ...DANJEON_IDS].forEach(id => $(id).value = 0);
+  calc();
+  saveAuto();
+}
+
+function resetAll() {
+  document.querySelectorAll('input[type="number"]').forEach(input => {
+    input.value = input.id === 'pointsPerLevel' ? 5 : 0;
+  });
+  calc();
+  saveAuto();
+}
+
+// ═══════════════════════════════════════════════
+// 최적화 시스템
+// ═══════════════════════════════════════════════
+
+/**
+ * 스텟 1 추가 시 특정 지표의 변화량 계산
+ */
+function gainIfOne(id, metric) {
+  const before = calcData()[metric];
+  const old    = num(id);
+  $(id).value  = old + 1;
+  const after  = calcData()[metric];
+  $(id).value  = old;
+  return after - before;
+}
+
+/**
+ * 주어진 ID 중 metric 증가량이 가장 큰 곳에 1 투자
+ */
+function spendBestFor(ids, metric) {
+  let best = ids[0], bestGain = -Infinity;
+  for (const id of ids) {
+    const g = gainIfOne(id, metric);
+    if (g > bestGain) { bestGain = g; best = id; }
+  }
+  $(best).value = num(best) + 1;
+}
+
+// 공격 최적화용 단축 함수
+const spendBestAttackPoint = () => spendBestFor(['addStr', 'addDex'], 'expectedAtk');
+const spendBestAttackDan   = () => spendBestFor(['midDan', 'topDan', 'botDan'], 'expectedAtk');
+
+// 행운 최적화 fallback용 (표기 공격력 기준)
+const spendBestAtkPoint = () => spendBestFor(['addStr', 'addDex'], 'newAtk');
+const spendBestAtkDan   = () => spendBestFor(['midDan', 'topDan', 'botDan'], 'newAtk');
+
+/**
+ * 생존 목표 달성도 점수 (낮을수록 목표에 가까움)
+ */
+function survivalScore(targets) {
+  if (!targets.length) return 0;
+  const c = calcData();
+  return targets.reduce((sum, t) => {
+    const diff = Math.abs(t.target - c[t.key]);
+    return sum + diff / Math.max(1, Math.abs(t.target));
+  }, 0);
+}
+
+let optimizeMode = 'attack';
+
+function openOptimizeModal(mode) {
+  optimizeMode = mode;
+  $('optTitle').textContent = mode === 'attack' ? '공격 최적화' : mode === 'survival' ? '생존 최적화' : '행운 최적화';
+  $('optPoints').value = Math.max(0, remainPoints());
+  $('optDan').value    = Math.max(0, remainDanjeon());
+  $('survivalFields').style.display   = mode === 'survival' ? 'grid' : 'none';
+  $('luckFields').style.display       = mode === 'luck'     ? 'block' : 'none';
+  $('defaultOptimizeBtn').style.display = mode === 'luck'   ? 'none' : 'inline-flex';
+  $('expOptimizeBtn').style.display   = mode === 'luck'     ? 'inline-flex' : 'none';
+  $('dropOptimizeBtn').style.display  = mode === 'luck'     ? 'inline-flex' : 'none';
   $('optModal').classList.add('show');
 }
-function closeOptimizeModal(){$('optModal').classList.remove('show')}
-function runOptimization(luckType='exp'){
-  let p=Math.max(0,Math.floor(num('optPoints')));
-  let d=Math.max(0,Math.floor(num('optDan')));
-  if(p>Math.max(0,remainPoints())||d>Math.max(0,remainDanjeon()))return alert('사용할 포인트가 남은 포인트를 초과함');
 
-  if(optimizeMode==='attack'){
-    while(p>0){spendBestAttackPoint();p--}
-    while(d>0){spendBestAttackDan();d--}
-  }
-
-  if(optimizeMode==='survival'){
-    const targets=[];
-    if(num('targetHp')>0)targets.push({key:'newHp',target:num('targetHp')});
-    if(num('targetPotion')>0)targets.push({key:'newPotion',target:num('targetPotion')});
-    if(num('targetResist')>0)targets.push({key:'newResist',target:num('targetResist')});
-
-    if(targets.length){
-      const baseVit=num('addVit');
-      const baseTop=num('topDan');
-      let bestP=0,bestD=0,bestScore=Infinity;
-
-      for(let pp=0; pp<=p; pp++){
-        $('addVit').value=baseVit+pp;
-        for(let dd=0; dd<=d; dd++){
-          $('topDan').value=baseTop+dd;
-          const c=calcData();
-          let score=0;
-          for(const t of targets){
-            const v=c[t.key];
-            const diff=Math.abs(t.target-v)/Math.max(1,Math.abs(t.target));
-            const over=v>t.target ? diff*2 : 0;
-            score+=diff+over;
-          }
-          if(score<bestScore){bestScore=score;bestP=pp;bestD=dd}
-        }
-      }
-
-      $('addVit').value=baseVit+bestP;
-      $('topDan').value=baseTop+bestD;
-      p-=bestP;
-      d-=bestD;
-    }
-
-    while(p>0){spendBestAttackPoint();p--}
-    while(d>0){spendBestAttackDan();d--}
-  }
-
-  if(optimizeMode==='luck'){
-    const atkTarget=num('targetAtk');
-    const base={str:num('addStr'),dex:num('addDex'),luk:num('addLuk'),top:num('topDan'),mid:num('midDan'),bot:num('botDan')};
-    const strPct=num('strPct'),dexPct=num('dexPct'),lukPct=num('lukPct');
-    const nStrPct=strPct+num('addStrPct'),nDexPct=dexPct+num('addDexPct'),nLukPct=lukPct+num('addLukPct');
-    const rawStr=statRaw(num('baseStr'),strPct);
-    const rawDex=statRaw(num('baseDex'),dexPct);
-    const baseRawAtk=statRaw(num('baseAtk'),num('baseAtkPct'));
-
-    function simulatedAtk(strDelta,dexDelta,midDelta){
-      const simStr=(rawStr+base.str+strDelta+num('addStrFlat'))*(1+nStrPct/100);
-      const simDex=(rawDex+base.dex+dexDelta+num('addDexFlat'))*(1+nDexPct/100);
-      const gainStr=simStr-num('baseStr');
-      const gainDex=simDex-num('baseDex');
-      const atkPct=num('baseAtkPct')+gainDex*F.dexAtkPct+num('addAtkPct')+(base.mid+midDelta);
-      return (baseRawAtk+gainStr*F.strAtk+num('addFlatAtk'))*(1+atkPct/100);
-    }
-    function simulatedMetric(lukDelta,botDelta){
-      const simLuk=(statRaw(num('baseLuk'),lukPct)+base.luk+lukDelta+num('addLukFlat'))*(1+nLukPct/100);
-      const gainLuk=simLuk-num('baseLuk');
-      const exp=num('baseExp')+gainLuk*F.lukExp+(base.bot+botDelta)*0.5;
-      const drop=num('baseDrop')+gainLuk*F.lukDrop+(base.bot+botDelta)*1.5;
-      return luckType==='exp'?exp:drop;
-    }
-
-    let best=null,bestMetric=-Infinity,bestOvershoot=Infinity;
-    for(let midDelta=0;midDelta<=d;midDelta++){
-      const botDelta=d-midDelta;
-      let foundForMid=false;
-      for(let spent=0;spent<=p&&!foundForMid;spent++){
-        for(let strDelta=0;strDelta<=spent;strDelta++){
-          const dexDelta=spent-strDelta;
-          const atk=simulatedAtk(strDelta,dexDelta,midDelta);
-          if(atk>=atkTarget){
-            const lukDelta=p-spent;
-            const metric=simulatedMetric(lukDelta,botDelta);
-            const overshoot=atk-atkTarget;
-            if(metric>bestMetric || (metric===bestMetric&&overshoot<bestOvershoot)){
-              bestMetric=metric;bestOvershoot=overshoot;best={strDelta,dexDelta,lukDelta,midDelta,botDelta};
-            }
-            foundForMid=true;
-          }
-        }
-      }
-    }
-    if(best){
-      $('addStr').value=base.str+best.strDelta;
-      $('addDex').value=base.dex+best.dexDelta;
-      $('addLuk').value=base.luk+best.lukDelta;
-      $('topDan').value=base.top;
-      $('midDan').value=base.mid+best.midDelta;
-      $('botDan').value=base.bot+best.botDelta;
-    }else{
-      while(p>0&&calcData().newAtk<atkTarget){spendBestAtkPoint();p--}
-      while(d>0&&calcData().newAtk<atkTarget){spendBestAtkDan();d--}
-      if(calcData().newAtk<atkTarget)alert('입력한 포인트로 목표 표기 공격력에 도달하지 못했습니다.');
-    }
-  }
-
-  if(!validateLimits(true))return;
-  calc();saveAuto();closeOptimizeModal();
+function closeOptimizeModal() {
+  $('optModal').classList.remove('show');
 }
-function getProfileData(){const data={};document.querySelectorAll('input[type="number"]').forEach(input=>data[input.id]=input.value);data.skillBossOn=$('skillBossOn')?.checked;data.pointsPerLevel=5;return data}function setProfileData(data){Object.entries(data).forEach(([id,value])=>{if(id==='skillBossOn'&&$('skillBossOn'))$('skillBossOn').checked=!!value;else if($(id))$(id).value=value});$('pointsPerLevel').value=5;calc()}function saveAuto(){try{localStorage.setItem('dokkaebiStatProfile_v5',JSON.stringify(getProfileData()))}catch(e){}}function loadAuto(){try{const saved=localStorage.getItem('dokkaebiStatProfile_v5');if(saved)setProfileData(JSON.parse(saved))}catch(e){}}function exportProfileCode(){const code=btoa(unescape(encodeURIComponent(JSON.stringify(getProfileData()))));navigator.clipboard.writeText(code).then(()=>alert('프로필 코드가 복사됨')).catch(()=>prompt('아래 코드를 복사해줘',code))}function importProfileCode(){const code=prompt('프로필 코드를 붙여넣어줘');if(!code)return;try{setProfileData(JSON.parse(decodeURIComponent(escape(atob(code.trim())))));saveAuto();alert('프로필을 불러왔음')}catch(e){alert('프로필 코드가 잘못됐음')}}function showPopupIfNeeded(){const until=Number(localStorage.getItem('dokkaebiPopupHiddenUntil')||0);if(Date.now()<until)return;$('dokkaebiPopup')?.classList.add('show')}function closePopup(){$('dokkaebiPopup')?.classList.remove('show')}function hidePopupFor3Hours(){localStorage.setItem('dokkaebiPopupHiddenUntil',String(Date.now()+3*60*60*1000));closePopup()}
-document.querySelectorAll('input').forEach(i=>i.addEventListener('input',()=>{calc();saveAuto();validateLimits(false)}));loadAuto();calc();showPopupIfNeeded();
+
+function runOptimization(luckType = 'exp') {
+  let p = Math.max(0, Math.floor(num('optPoints')));
+  let d = Math.max(0, Math.floor(num('optDan')));
+
+  if (p > Math.max(0, remainPoints()) || d > Math.max(0, remainDanjeon())) {
+    return alert('사용할 포인트가 남은 포인트를 초과함');
+  }
+
+  if (optimizeMode === 'attack') {
+    while (p-- > 0) spendBestAttackPoint();
+    while (d-- > 0) spendBestAttackDan();
+  }
+
+  else if (optimizeMode === 'survival') {
+    const targets = [];
+    if (num('targetHp')     > 0) targets.push({ key: 'newHp',     target: num('targetHp') });
+    if (num('targetPotion') > 0) targets.push({ key: 'newPotion', target: num('targetPotion') });
+    if (num('targetResist') > 0) targets.push({ key: 'newResist', target: num('targetResist') });
+
+    if (targets.length) {
+      const baseVit = num('addVit'), baseTop = num('topDan');
+      let bestP = 0, bestD = 0, bestScore = Infinity;
+
+      for (let pp = 0; pp <= p; pp++) {
+        $('addVit').value = baseVit + pp;
+        for (let dd = 0; dd <= d; dd++) {
+          $('topDan').value = baseTop + dd;
+          const c = calcData();
+          let score = 0;
+          for (const t of targets) {
+            const v    = c[t.key];
+            const diff = Math.abs(t.target - v) / Math.max(1, Math.abs(t.target));
+            const over = v > t.target ? diff * 2 : 0;
+            score += diff + over;
+          }
+          if (score < bestScore) { bestScore = score; bestP = pp; bestD = dd; }
+        }
+      }
+
+      $('addVit').value = baseVit + bestP;
+      $('topDan').value = baseTop + bestD;
+      p -= bestP;
+      d -= bestD;
+    }
+
+    // 남은 포인트는 공격 최적화
+    while (p-- > 0) spendBestAttackPoint();
+    while (d-- > 0) spendBestAttackDan();
+  }
+
+  else if (optimizeMode === 'luck') {
+    const atkTarget  = num('targetAtk');
+    const base       = { str: num('addStr'), dex: num('addDex'), luk: num('addLuk'), top: num('topDan'), mid: num('midDan'), bot: num('botDan') };
+    const strPct     = num('strPct'), dexPct = num('dexPct'), lukPct = num('lukPct');
+    const totalStrPct = strPct + num('addStrPct');
+    const totalDexPct = dexPct + num('addDexPct');
+    const totalLukPct = lukPct + num('addLukPct');
+    const rawStr     = statRaw(num('baseStr'), strPct);
+    const rawDex     = statRaw(num('baseDex'), dexPct);
+    const baseRawAtk = statRaw(num('baseAtk'), num('baseAtkPct'));
+
+    function simAtk(strDelta, dexDelta, midDelta) {
+      const simStr   = (rawStr + base.str + strDelta + num('addStrFlat')) * (1 + totalStrPct / 100);
+      const simDex   = (rawDex + base.dex + dexDelta + num('addDexFlat')) * (1 + totalDexPct / 100);
+      const gainStr  = simStr - num('baseStr');
+      const gainDex  = simDex - num('baseDex');
+      const atkPct   = num('baseAtkPct') + gainDex * STAT_FACTOR.dexAtkPct + num('addAtkPct') + (base.mid + midDelta);
+      return (baseRawAtk + gainStr * STAT_FACTOR.strAtk + num('addFlatAtk')) * (1 + atkPct / 100);
+    }
+
+    function simMetric(lukDelta, botDelta) {
+      const simLuk  = (statRaw(num('baseLuk'), lukPct) + base.luk + lukDelta + num('addLukFlat')) * (1 + totalLukPct / 100);
+      const gainLuk = simLuk - num('baseLuk');
+      const exp     = num('baseExp')  + gainLuk * STAT_FACTOR.lukExp  + (base.bot + botDelta) * 0.5;
+      const drop    = num('baseDrop') + gainLuk * STAT_FACTOR.lukDrop + (base.bot + botDelta) * 1.5;
+      return luckType === 'exp' ? exp : drop;
+    }
+
+    let best = null, bestMetric = -Infinity, bestOvershoot = Infinity;
+
+    for (let midDelta = 0; midDelta <= d; midDelta++) {
+      const botDelta = d - midDelta;
+      let found = false;
+      for (let spent = 0; spent <= p && !found; spent++) {
+        for (let strDelta = 0; strDelta <= spent; strDelta++) {
+          const dexDelta = spent - strDelta;
+          const atk = simAtk(strDelta, dexDelta, midDelta);
+          if (atk >= atkTarget) {
+            const lukDelta  = p - spent;
+            const metric    = simMetric(lukDelta, botDelta);
+            const overshoot = atk - atkTarget;
+            if (metric > bestMetric || (metric === bestMetric && overshoot < bestOvershoot)) {
+              bestMetric = metric; bestOvershoot = overshoot;
+              best = { strDelta, dexDelta, lukDelta, midDelta, botDelta };
+            }
+            found = true;
+          }
+        }
+      }
+    }
+
+    if (best) {
+      $('addStr').value = base.str + best.strDelta;
+      $('addDex').value = base.dex + best.dexDelta;
+      $('addLuk').value = base.luk + best.lukDelta;
+      $('topDan').value = base.top;
+      $('midDan').value = base.mid + best.midDelta;
+      $('botDan').value = base.bot + best.botDelta;
+    } else {
+      // 목표 공격력에 도달할 수 없으면 최대한 올리기
+      while (p > 0 && calcData().newAtk < atkTarget) { spendBestAtkPoint(); p--; }
+      while (d > 0 && calcData().newAtk < atkTarget) { spendBestAtkDan();   d--; }
+      if (calcData().newAtk < atkTarget) alert('입력한 포인트로 목표 표기 공격력에 도달하지 못했습니다.');
+    }
+  }
+
+  if (!validateLimits(true)) return;
+  calc();
+  saveAuto();
+  closeOptimizeModal();
+}
+
+// ═══════════════════════════════════════════════
+// 저장 / 불러오기
+// ═══════════════════════════════════════════════
+
+const SAVE_KEY = 'dokkaebiStatProfile_v5';
+
+function getProfileData() {
+  const data = {};
+  document.querySelectorAll('input[type="number"]').forEach(input => data[input.id] = input.value);
+  data.skillBossOn    = $('skillBossOn')?.checked;
+  data.pointsPerLevel = 5;
+  return data;
+}
+
+function setProfileData(data) {
+  Object.entries(data).forEach(([id, value]) => {
+    if (id === 'skillBossOn' && $('skillBossOn')) $('skillBossOn').checked = !!value;
+    else if ($(id)) $(id).value = value;
+  });
+  $('pointsPerLevel').value = 5;
+  calc();
+}
+
+function saveAuto() {
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify(getProfileData())); } catch (e) {}
+}
+
+function loadAuto() {
+  try {
+    const saved = localStorage.getItem(SAVE_KEY);
+    if (saved) setProfileData(JSON.parse(saved));
+  } catch (e) {}
+}
+
+function exportProfileCode() {
+  const code = btoa(unescape(encodeURIComponent(JSON.stringify(getProfileData()))));
+  navigator.clipboard.writeText(code)
+    .then(() => alert('프로필 코드가 복사됨'))
+    .catch(() => prompt('아래 코드를 복사해줘', code));
+}
+
+function importProfileCode() {
+  const code = prompt('프로필 코드를 붙여넣어줘');
+  if (!code) return;
+  try {
+    setProfileData(JSON.parse(decodeURIComponent(escape(atob(code.trim())))));
+    saveAuto();
+    alert('프로필을 불러왔음');
+  } catch (e) {
+    alert('프로필 코드가 잘못됐음');
+  }
+}
+
+// ═══════════════════════════════════════════════
+// 테마
+// ═══════════════════════════════════════════════
+
+let darkMode = (localStorage.getItem('dokkaebiTheme') || 'dark') !== 'light';
+
+function applyTheme() {
+  document.body.classList.toggle('light', !darkMode);
+  const btn = $('themeBtn');
+  if (btn) btn.textContent = darkMode ? '☀️ 라이트모드' : '🌙 다크모드';
+}
+
+function toggleTheme() {
+  darkMode = !darkMode;
+  localStorage.setItem('dokkaebiTheme', darkMode ? 'dark' : 'light');
+  applyTheme();
+}
+
+// ═══════════════════════════════════════════════
+// 팝업
+// ═══════════════════════════════════════════════
+
+function showPopupIfNeeded() {
+  const until = Number(localStorage.getItem('dokkaebiPopupHiddenUntil') || 0);
+  if (Date.now() < until) return;
+  $('dokkaebiPopup')?.classList.add('show');
+}
+
+function closePopup() {
+  $('dokkaebiPopup')?.classList.remove('show');
+}
+
+function hidePopupFor3Hours() {
+  localStorage.setItem('dokkaebiPopupHiddenUntil', String(Date.now() + 3 * 60 * 60 * 1000));
+  closePopup();
+}
+
+// ═══════════════════════════════════════════════
+// 플로팅 메뉴 드래그
+// ═══════════════════════════════════════════════
+
+function initFloatingDrag() {
+  const box    = $('floatingActions');
+  const handle = $('floatingDragHandle');
+  if (!box || !handle) return;
+
+  // 저장된 위치 복원
+  const saved = localStorage.getItem('dokkaebiFloatingPos');
+  if (saved) {
+    try {
+      const p = JSON.parse(saved);
+      box.style.left   = p.left + 'px';
+      box.style.top    = p.top  + 'px';
+      box.style.right  = 'auto';
+      box.style.bottom = 'auto';
+    } catch (e) {}
+  }
+
+  let dragging = false, dx = 0, dy = 0;
+
+  handle.addEventListener('mousedown', e => {
+    dragging = true;
+    const r  = box.getBoundingClientRect();
+    dx = e.clientX - r.left;
+    dy = e.clientY - r.top;
+    document.body.style.userSelect = 'none';
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const x = Math.max(8, Math.min(window.innerWidth  - box.offsetWidth  - 8, e.clientX - dx));
+    const y = Math.max(8, Math.min(window.innerHeight - box.offsetHeight - 8, e.clientY - dy));
+    box.style.left   = x + 'px';
+    box.style.top    = y + 'px';
+    box.style.right  = 'auto';
+    box.style.bottom = 'auto';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    document.body.style.userSelect = '';
+    const r = box.getBoundingClientRect();
+    localStorage.setItem('dokkaebiFloatingPos', JSON.stringify({ left: r.left, top: r.top }));
+  });
+}
+
+// ═══════════════════════════════════════════════
+// 초기화
+// ═══════════════════════════════════════════════
+
+document.querySelectorAll('input').forEach(i =>
+  i.addEventListener('input', () => { calc(); saveAuto(); validateLimits(false); })
+);
+
+loadAuto();
+calc();
+applyTheme();
+initFloatingDrag();
+showPopupIfNeeded();
 </script>
 </body>
 </html>
