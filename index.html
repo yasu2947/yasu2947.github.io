@@ -11,6 +11,7 @@
   <style>
 :root{--bg:#050914;--line:#263653;--text:#eaf1ff;--muted:#8ea0c2;--blue:#55a7ff;--gold:#ffd85a;--red:#ff5f7d;--green:#72e45d;--purple:#b879ff;--cyan:#20d7ff;--orange:#ff8a33;--teal:#38e2c2}
 *{box-sizing:border-box}
+img.emoji{height:1.1em;width:1.1em;vertical-align:-0.15em;display:inline-block}
 body{margin:0;background:radial-gradient(circle at 50% -10%,#12203a,#050914 58%);color:var(--text);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .wrap{max-width:1740px;margin:0 auto;padding:22px;display:grid;grid-template-columns:.95fr 1.25fr;gap:14px}
 .top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding:10px 6px 18px}
@@ -194,6 +195,7 @@ body.light #realCdLine,body.light #skillNonCritDamage{color:#5b21b6 !important}
 body.light #skillCritDamage,body.light #burstDpm{color:#8a5f00 !important}
 body.light #hasteRate{color:#6d48d6}
 body.light .popup-box{background:#faf8ff;border-color:#c4b5fd;color:#1e1b4b}
+body.light #luckFields label span{background:rgba(124,58,237,.1) !important;color:#5b21b6 !important}
 body.light .qname{color:#1e1b4b}
 /* ── 헤더 + 퀵메뉴 버튼 다크모드 고유색 ── */
 #btnSaveModal,#btnFloatSave{color:#72e45d;border-color:#2a5e2a}
@@ -249,6 +251,7 @@ body.light .popup-actions{background:linear-gradient(180deg,#eef4ff,#ffffff)}
   transition:opacity .7s ease,visibility .7s ease}
 #welcomeScreen.fade-out{opacity:0;visibility:hidden;pointer-events:none}
 .welcome-inner{display:flex;flex-direction:column;align-items:center;width:100%;max-width:660px}
+.welcome-ghost img.emoji{height:84px;width:84px;vertical-align:middle}
 .welcome-ghost{font-size:84px;margin-bottom:14px;
   animation:welcomeFloat 2.4s ease-in-out infinite, welcomeGlow 2.4s ease-in-out infinite alternate}
 @keyframes welcomeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
@@ -412,6 +415,8 @@ body.light .ocr-row-missing{background:rgba(180,40,40,.07) !important;border-col
 body.light .ocr-row-missing span{color:#991b1b !important}
 body.light .ocr-row-missing input{background:rgba(180,40,40,.05) !important;border-color:#f0a0a0 !important;color:#991b1b !important}
   </style>
+  <!-- 이모지 브라우저 통일 (Twemoji) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/twemoji.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -561,7 +566,10 @@ body.light .ocr-row-missing input{background:rgba(180,40,40,.05) !important;bord
       <div class="field block"><label>목표 저항</label><input id="targetResist" type="number" value="0"></div>
     </div>
     <div id="luckFields" style="display:none;margin-top:12px">
-      <div class="field block"><label>최소 예상 표기 공격력</label><input id="targetAtk" type="number" value="0"></div>
+      <div class="field block">
+        <label>목표 예상 표기 공격력 <span style="font-size:10px;font-weight:900;padding:2px 6px;border-radius:5px;background:rgba(168,85,247,.15);color:#c084fc;margin-left:4px;vertical-align:middle">표기 공격력</span></label>
+        <input id="targetAtk" type="number" value="0">
+      </div>
     </div>
     <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
       <button onclick="closeOptimizeModal()">취소</button>
@@ -605,6 +613,7 @@ body.light .ocr-row-missing input{background:rgba(180,40,40,.05) !important;bord
     <!-- 01. 기본 스텟 -->
     <div class="section s1" id="sect-base">
       <div class="title"><span class="badge">01</span><h2>기본 스텟 입력</h2></div>
+      <div class="hint">📷 스텟 인식 버튼으로 스크린샷을 붙여넣으면 자동으로 입력됩니다.</div>
       <div class="grid grid4">
         <div class="field block"><label>레벨</label><input id="level" type="number" value="0"></div>
         <div class="field block"><label>레벨당 포인트</label><input id="pointsPerLevel" type="number" value="5" readonly></div>
@@ -651,7 +660,8 @@ body.light .ocr-row-missing input{background:rgba(180,40,40,.05) !important;bord
 
     <!-- 03+. 추가 스텟 -->
     <div class="section s4" id="sect-add">
-      <div class="title"><span class="badge">03+</span><h2>추가 스텟<div class="hint">잠재/진열대 등으로 추가할 예정이거나 빼고싶은 스텟을 기입하세요.</div></h2></div>
+      <div class="title"><span class="badge">03+</span><h2>추가 스텟</h2></div>
+      <div class="hint">잠재/진열대 등으로 추가할 예정이거나 빼고싶은 스텟을 기입하세요.</div>
       <div class="grid grid4">
         <div class="field block"><label>힘 +</label><input id="addStrFlat" type="number" value="0" step="0.01"></div>
         <div class="field block"><label>힘 % 추가</label><input id="addStrPct" type="number" value="0" step="0.01"></div>
@@ -2237,6 +2247,19 @@ initFloatingDrag();
     applyTheme();
   };
 })();
+
+// ── 이모지 통일 (Twemoji) ──
+if (typeof twemoji !== 'undefined') {
+  // 초기 파싱
+  twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+  // 동적으로 추가되는 요소에도 적용 (저장관리 프리셋 슬롯 등)
+  const _twObs = new MutationObserver(muts => {
+    muts.forEach(m => m.addedNodes.forEach(n => {
+      if (n.nodeType === 1) twemoji.parse(n, { folder: 'svg', ext: '.svg' });
+    }));
+  });
+  _twObs.observe(document.body, { childList: true, subtree: true });
+}
 </script>
 </body>
 </html>
