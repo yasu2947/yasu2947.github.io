@@ -446,15 +446,16 @@ body.light .ocr-row-missing input{background:rgba(180,40,40,.05) !important;bord
     </div>
     <div class="welcome-log">
       <div class="welcome-log-header">
-        <span class="welcome-log-ver">✦ UPDATE v0.3.4</span>
-        <span class="welcome-log-date">2026.05.12</span>
+        <span class="welcome-log-ver">✦ UPDATE v0.3.5</span>
+        <span class="welcome-log-date">2026.06.21</span>
       </div>
       <div class="welcome-log-items">
-        <div class="welcome-log-item"><span class="dot" style="color:#ff8a33">✦</span><span class="txt">예상 전투력 표시 추가<small>최종 결과창에서 전투력을 바로 확인할 수 있습니다</small></span></div>
-        <div class="welcome-log-item"><span class="dot" style="color:#60d9ff">✦</span><span class="txt">회피 % 스텟 추가<small>기본 스텟 입력 및 자동 인식 지원</small></span></div>
-        <div class="welcome-log-item"><span class="dot" style="color:#c084fc">✦</span><span class="txt">시작 화면 추가<small>접속 시 업데이트 내역 확인 · 라이트모드 토글</small></span></div>
-        <div class="welcome-log-item"><span class="dot" style="color:#a3e635">✦</span><span class="txt">라이트모드 전면 개편<small>연보라 테마 · 버튼 색상 통일 · 저장 관리 UI 개선</small></span></div>
+        <div class="welcome-log-item"><span class="dot" style="color:#4ade80">✦</span><span class="txt">현경 단전 조건 변경<small>서버 업데이트 반영 · 170레벨에서 단전 +11 지급</small></span></div>
       </div>
+      <details class="welcome-log-prev">
+        <summary>▾ 이전 버전 (v0.3.4)</summary>
+        <div class="prev-content">예상 전투력 표시 추가 · 회피 % 스텟 추가<br>시작 화면 추가 · 라이트모드 전면 개편</div>
+      </details>
       <details class="welcome-log-prev">
         <summary>▾ 이전 버전 (v0.3.2)</summary>
         <div class="prev-content">스텟 자동 인식 기능 추가 · 저장 관리 기능 추가<br>사용법 튜토리얼 추가 · UI 전반 개선</div>
@@ -933,7 +934,7 @@ const DANJEON_THRESHOLDS = [
   { lv:  90, pts: 5 },
   { lv: 120, pts: 7 },
   { lv: 150, pts: 9 },
-  { lv: 180, pts: 11 },
+  { lv: 170, pts: 11 },
   { lv: 200, pts: 13 },
 ];
 
